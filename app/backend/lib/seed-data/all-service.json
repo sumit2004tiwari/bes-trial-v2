@@ -1,0 +1,20 @@
+[
+    {
+        "service_name": "my_space",
+        "isActive": true,
+        "name": "Book My Space",
+        "description": "Book My space"
+    },
+    {
+        "service_name": "visitor_registration",
+        "isActive": true,
+        "name": "Visitor Registration",
+        "description": "Visitor Registrations"
+    },
+    {
+        "service_name": "delegate_registration",
+        "isActive": true,
+        "name": "Delegate Registration",
+        "description": "Delegate Registration"
+    }
+]

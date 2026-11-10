@@ -1,0 +1,54 @@
+[
+    {
+        "id": 0,
+        "name": "Visitor Registrations",
+        "path": "visitors",
+        "normalLink": false,
+        "parentPath": "",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+    },
+    {
+        "id": 1,
+        "name": "Delegate Registrations",
+        "path": "delegates",
+        "normalLink": false,
+        "parentPath": "",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+    },
+    {
+        "id": 2,
+        "name": "Space Registrations",
+        "path": "my-space",
+        "normalLink": false,
+        "parentPath": "",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+    },
+    {
+        "id": 3,
+        "name": "Member Approvals",
+        "path": "members",
+        "normalLink": false,
+        "parentPath": "",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+    }
+]

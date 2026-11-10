@@ -1,0 +1,145 @@
+[
+ 
+  {
+    "name": "Shri Sunil",
+    "design": "President, BES (I)",
+    "email": "sunil.ddi@gmail.com",
+    "img": "sunil.jpg",
+    "id": 1
+  },
+  {
+    "name": "Shri Mukesh Kumar",
+    "design": "Immediate Past President, BES (I)",
+    "email": "mukeshkumar1965@gmail.com",
+    "img": "mukeshkumar.jpeg",
+    "id": 2
+  },
+  {
+    "name": "Shri C.B.S. Maurya",
+    "design": "Past President, BES (I)",
+    "email": "cbsmaurya@gmail.com",
+    "img": "CBSMaurya.jpg",
+    "id": 3
+  },
+
+  {
+    "name": "Shri Aftab Ahmad",
+    "design": "Hon. Secretary",
+    "email": "aftabahmad1@rediffmail.com",
+    "img": "AftabAhmad.jpg",
+    "id": 4
+  },
+  {
+    "name": "Shri Manoj Gupta",
+    "design": "Hon. Treasurer BES(I)",
+    "email": "manoj.gupta@prasarbharati.gov.in",
+    "img": "manojgupta.jpg",
+    "id": 5
+  },
+  {
+    "name": "Shri K.K. Rao",
+    "design": "Vice President",
+    "email": "krishnarao73@yahoo.co.in",
+    "img": "kkrao.jpg",
+    "id": 6
+  },
+  {
+    "name": "Shri Devesh Kumar Sachan",
+    "design": "Vice President",
+    "email": "dksachan08@gmail.com",
+    "img": "",
+    "id": 7
+  },
+  {
+    "name": "Smt. Archana M. Gupta",
+    "design": "Council Member",
+    "email": "archanaddi@rediffmail.com",
+    "img": "archana.png",
+    "id": 8
+  },
+  {
+    "name": "Shri P.S. Srivastava",
+    "design": "Council Member",
+    "email": "pss_18@yahoo.com",
+    "img": "pssrivastava.jpg",
+    "id": 9
+  },
+  {
+    "name": "Shri C.K. Jain",
+    "design": "Council Member",
+    "email": "ckjaindd@gmail.com",
+    "img": "ckjain.jpg",
+    "id": 10
+  },
+  {
+    "name": "Shri Sandeep Srivastava",
+    "design": "Council Member",
+    "email": "sandeep@prasarbharati.gov.in",
+    "img": "",
+    "id": 11
+  },
+  {
+    "name": "Shri P. Das",
+    "design": "Council Member",
+    "email": "pdasdelhi@gmail.com",
+    "img": "pdas.jpg",
+    "id": 12
+  },
+  {
+    "name": "Shri Rajeev Kumar",
+    "design": "Council Member",
+    "email": "rajeev00kumar@yahoo.com ",
+    "img": "RajeevKumar.jpg",
+    "id": 13
+  },
+
+  {
+    "name": "Shri Shailesh Kumar Kanauje",
+    "design": "Council Member",
+    "email": "shaileshkanauje@rediffmail.com",
+    "img": "",
+    "id": 14
+  },
+  {
+    "name": "Shri K. Murugan",
+    "design": "Council Member",
+    "email": "murugan_dde@rediffmail.com",
+    "img": "",
+    "id": 15
+  },
+  {
+    "name": "Shri Rajesh Kumar Sharma",
+    "design": "Council Member",
+    "email": "rksharma@prasarbharati.gov.in",
+    "img": "",
+    "id": 16
+  },
+  {
+    "name": "Shri Abhishek Agrawal",
+    "design": "Council Member",
+    "email": "abhiagra31@gmail.com",
+    "img": "",
+    "id": 17
+  },
+  {
+    "name": "Shri M.P. Singh",
+    "design": "Council Member",
+    "email": "mpsinghwin@rediffmail.com",
+    "img": "",
+    "id": 18
+  },
+  {
+    "name": "Dr. N. Namassivaya",
+    "design": "Co-opted Member",
+    "email": "nnamassivaya@gmail.com",
+    "img": "",
+    "id": 19
+  },
+  {
+    "name": "Prof. Dr. Jagdish W. Bakal",
+    "design": "Co-opted Member",
+    "email": "bakaljw@gmail.com",
+    "img": "",
+    "id": 20
+  }
+]

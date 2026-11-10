@@ -1,0 +1,80 @@
+.boxContainer {
+  margin-bottom: 24px;
+}
+.boxContainer label {
+  display: block;
+  font-weight: 600;
+  font-size: 15px;
+  color: #334155;
+  margin-bottom: 6px;
+}
+.boxContainer :global(.MuiOutlinedInput-root),
+.container :global(.MuiOutlinedInput-root) {
+  border-radius: 10px;
+  background-color: #f8fafc;
+  transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+.boxContainer :global(.MuiOutlinedInput-root:hover),
+.container :global(.MuiOutlinedInput-root:hover) {
+  background-color: #ffffff;
+}
+.boxContainer :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline),
+.boxContainer :global(.MuiOutlinedInput-root.MuiOutlinedInput-notchedOutline),
+.container :global(.MuiOutlinedInput-root:hover .MuiOutlinedInput-notchedOutline),
+.container :global(.MuiOutlinedInput-root.MuiOutlinedInput-notchedOutline) {
+  border-color: #cbd5e1;
+}
+.boxContainer
+  :global(.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline),
+.container
+  :global(.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline) {
+  border-color: #142b45;
+  border-width: 1.5px;
+}
+.boxContainer :global(.Mui-disabled),
+.container :global(.Mui-disabled) {
+  background-color: #f1f5f9;
+}
+.container {
+  width: 100%;
+  max-width: 620px;
+  margin: auto;
+  background-color: white;
+  padding: 40px 32px;
+  border-radius: 20px;
+  border: 1px solid #e2e7ec;
+  box-shadow: 0 8px 32px rgba(20, 43, 69, 0.04);
+  box-sizing: border-box;
+}
+.container2 {
+  min-width: 0;
+  width: 100%;
+  max-width: 620px;
+  margin: auto;
+
+  padding: 30px;
+}
+.btn_container {
+  width: 96%;
+  margin: auto;
+}
+.submit_btn {
+  background: #142b45;
+  transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  color: white;
+  padding: 12px;
+  border-radius: 10px;
+  text-transform: none;
+  font-weight: 600;
+  box-shadow: none;
+}
+.submit_btn:hover {
+  background: #244665;
+  color: white;
+  box-shadow: none;
+}
+
+@media (max-width: 600px) {
+  .container { padding: 26px 20px; border-radius: 12px; }
+  .container2 { padding: 20px 0; }
+}

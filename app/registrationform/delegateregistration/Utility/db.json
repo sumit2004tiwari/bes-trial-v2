@@ -1,0 +1,278 @@
+[
+  {
+    "key": "name",
+    "name": "Full Name",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "organisation",
+    "name": "Organisation",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "city",
+    "name": "City",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "inactive": true
+  },
+  {
+    "key": "department",
+    "name": "Department",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "inactive": false
+  },
+  {
+    "key": "mobile",
+    "name": "Mobile",
+    "required": true,
+    "fieldType": "phone",
+    "type": "text",
+    "options": [],
+    "placeholder": "Mobile Number",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "email",
+    "name": "Email",
+    "fieldType": "email",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "query",
+    "name": "Query",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "inactive": true
+  },
+  {
+    "key": "address",
+    "name": "Postal Address",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "inactive": false
+  },
+  {
+    "key": "category",
+    "name": "Category",
+    "fieldType": "select",
+    "required": true,
+    "type": "select",
+    "inactive": true,
+    "options": [
+      {
+        "key": "select_category",
+        "value": " ",
+        "label": "Select Category"
+      },
+      {
+        "key": "engineer",
+        "value": "engineer",
+        "label": "Engineer"
+      },
+      {
+        "key": "editor",
+        "value": "editor",
+        "label": "Editor"
+      },
+      {
+        "key": "cinematographer",
+        "value": "cinematographer",
+        "label": "Cinematographer"
+      },
+      {
+        "key": "entrepreneur",
+        "value": "entrepreneur",
+        "label": "Entrepreneur"
+      },
+      {
+        "key": "management",
+        "value": "management",
+        "label": "Management"
+      },
+      {
+        "key": "academecian",
+        "value": "academecian",
+        "label": "Academecian"
+      },
+      {
+        "key": "student",
+        "value": "student",
+        "label": "Student"
+      }
+    ],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "session_type",
+    "name": "Fees Type",
+    "fieldType": "select",
+    "required": true,
+    "type": "select",
+    "inactive": false,
+    "options": [
+      {
+        "key": "select_category",
+        "value": " ",
+        "label": "Select Fees"
+      },
+      {
+        "key": "All the sessions @8000",
+        "value": "All the sessions @8000",
+        "label": "All the sessions @8000 INR"
+      },
+      {
+        "key": "Sessions I to VIII @4000",
+        "value": "Sessions I to VIII @4000",
+        "label": "Sessions I to VIII @4000 INR"
+      },
+      {
+        "key": "Sessions IX to XIV @4000",
+        "value": "Sessions IX to XIV @4000",
+        "label": "Sessions IX to XIV @4000 INR"
+      },
+      {
+        "key": "All the sessions @4000 BES(I)",
+        "value": "All the sessions @4000 BES(I)",
+        "label": "All the sessions @4000 for BES (I) Members"
+      },
+      {
+        "key": "Sessions I to VIII @2000 BES(I)",
+        "value": "Sessions I to VIII @2000 BES(I)",
+        "label": "Sessions I to VIII @2000 INR for BES (I) Members"
+      },
+      {
+        "key": "Sessions IX to XIV @2000 BES(I)",
+        "value": "Sessions IX to XIV @2000 BES(I)",
+        "label": "Sessions IX to XIV @2000 INR for BES (I) Members"
+      },
+      {
+        "key": "All the sessions @2000 BES 60+",
+        "value": "All the sessions @2000 BES 60+",
+        "label": "All the sessions @2000INR for BES Members over the age of 60 years"
+      }
+    ],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "payment_type",
+    "name": "Payment Type",
+    "fieldType": "select",
+    "required": true,
+    "type": "select",
+    "options": [
+      {
+        "key": "select_payment_type",
+        "value": " ",
+        "label": "Select Payment Type"
+      },
+      {
+        "key": "upi",
+        "value": "upi",
+        "label": "Upi"
+      },
+      {
+        "key": "dd",
+        "value": "dd",
+        "label": "DD"
+      },
+      {
+        "key": "cheque",
+        "value": "cheque",
+        "label": "Cheque"
+      },
+      {
+        "key": "bank_transfer",
+        "value": "bank_transfer",
+        "label": "Bank Transfer"
+      },
+      {
+        "key": "other",
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "bank_name",
+    "name": "Bank Name",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "placeholder": "If Not available please enter NA"
+  },
+  {
+    "key": "transaction_no",
+    "name": "DD/ Cheque No. / Transaction No.",
+    "fieldType": "number",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "placeholder": "If Not available please enter 0"
+  },
+  {
+    "key": "amount",
+    "name": "Amount",
+    "fieldType": "number",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "other_details",
+    "name": "Other Details (If any)",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required",
+    "placeholder": "If Not available please enter NA"
+  }
+]

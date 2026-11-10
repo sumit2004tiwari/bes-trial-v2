@@ -1,0 +1,61 @@
+name: Auto Commit for PRs to Master
+
+on:
+  pull_request:
+    branches:
+      - master
+    types: [opened, synchronize] # Trigger when PR is created or updated
+
+jobs:
+  auto_commit_pr:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout PR branch
+        uses: actions/checkout@v5
+        with:
+          ref: ${{ github.head_ref }} # Checkout the source branch (not master)
+
+      - name: Set up Git for Owner
+        run: |
+          git config user.name "${{ secrets.OWNER_USERNAME }}"
+          git config user.email "${{ secrets.OWNER_EMAIL }}"
+
+      - name: Get last commit message
+        id: get_commit_msg
+        run: |
+          # Get the last commit message made (regardless of who committed)
+          COMMIT_MSG=$(git log -1 --pretty=%B)
+          echo "Last commit message: $COMMIT_MSG"
+          echo "COMMIT_MSG=$COMMIT_MSG" >> $GITHUB_ENV  # Store commit message
+
+      - name: Get last commit author
+        id: get_last_commit
+        run: |
+          LAST_COMMIT_AUTHOR=$(git log -1 --pretty=%ae)
+          echo "LAST_COMMIT_AUTHOR=$LAST_COMMIT_AUTHOR" >> $GITHUB_ENV
+
+      - name: Check if commit is from Owner
+        id: check_author
+        run: |
+          if [[ "$LAST_COMMIT_AUTHOR" == "${{ secrets.OWNER_EMAIL }}" ]]; then
+            echo "Commit already from owner, skipping."
+            echo "SKIP_COMMIT=true" >> $GITHUB_ENV
+          else
+            echo "Not from owner, proceeding."
+            echo "SKIP_COMMIT=false" >> $GITHUB_ENV
+          fi
+
+      - name: Create Owner Commit
+        if: env.SKIP_COMMIT == 'false'
+        run: |
+          NEW_COMMIT_MSG="deploy pr--  $COMMIT_MSG"
+          git pull origin ${{ github.head_ref }}
+          git commit --allow-empty -m "$NEW_COMMIT_MSG"
+
+      - name: Push Owner Commit
+        if: env.SKIP_COMMIT == 'false'
+        run: |
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git HEAD:${{ github.head_ref }}

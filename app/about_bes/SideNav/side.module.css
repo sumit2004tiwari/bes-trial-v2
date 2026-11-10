@@ -1,0 +1,8 @@
+.sideNav { background: white; border: 1px solid #e2e7ec; border-radius: 4px; padding: 18px 12px; color: #536477; }
+.sideNav h3 { font-size: 13px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: #142b45; margin: 10px 12px 14px; }
+.sideNav h3:not(:first-child) { padding-top: 20px; margin-top: 18px; border-top: 1px solid #e2e7ec; }
+.sideNav ul { list-style: none; padding: 0; }
+.sideNav li { margin: 3px 0; }
+.sideNav li > a { display: block; padding: 11px 12px; font-size: 16px; line-height: 1.6; border-radius: 3px; color: #536477; transition: background .2s, color .2s; }
+.sideNav li > a:hover { background: #f3f5f8; color: #142b45; }
+.sideNav li > a.selected { background: #edf2f6; color: #142b45; font-weight: 600; box-shadow: inset 3px 0 #b08a48; }

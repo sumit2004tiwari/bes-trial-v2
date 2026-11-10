@@ -1,0 +1,58 @@
+[
+  {
+    "nameOfCommitees": "BES Expo-Conference ",
+    "id": 1,
+    "email": "sunil.ddi@gmail.com",
+    "chairman": "Shri Sunil",
+    "coChairman":"Shri C.K. Jain"
+  },
+  {
+    "nameOfCommitees": "BES Expo-Exhibition",
+    "id": 2,
+    "email": "abhiagra31@gmail.com",
+    "chairman": "Shri Abhishek Agarwal",
+    "coChairman":"Shri P. Das"
+  },
+  {
+    "nameOfCommitees": "BES Review",
+    "id": 3,
+    "email": "pdasdelhi@gmail.com",
+    "chairman": "Shri P. Das",
+    "coChairman":"Shri Devesh Kumar Sachan & Shri Rajeev Kumar"
+  },
+  {
+    "nameOfCommitees": "Website Management ",
+    "id": 4,
+    "email": "aftabahmad1@rediffmail.com",
+    "chairman": "Shri Aftab Ahmad",
+    "coChairman":"Shri Shri Sandeep Srivastava"
+  },
+  {
+    "nameOfCommitees": "Constitution",
+    "id": 5,
+    "email": "pss_18@yahoo.com",
+    "chairman": "Shri P.S. Srivastava",
+    "coChairman":"Shri D. Muthusami"
+  },
+  {
+    "nameOfCommitees": "New Member Induction",
+    "id": 6,
+    "email": "archanaddi@rediffmail.com",
+    "chairman": "Smt. Archana M. Gupta",
+    "coChairman":"Shri K.K. Rao"
+  },
+  {
+    "nameOfCommitees": "Seminar and Lecture",
+    "id": 7,
+    "email": "krishnarao73@yahoo.co.in",
+    "chairman": "Shri K.K. Rao",
+    "coChairman":"Shri M.P. Singh & Shri Rajesh Kumar Sharma"
+  },
+  {
+    "nameOfCommitees": "Local Chapter Coordination Committee ",
+    "id": 8,
+    "email": "amangalgi@yahoo.com",
+    "chairman": "Shri Anil Kumar Mangalgi",
+    "coChairman":"Shri C.K. Jain & Shri N.V. Ramanna"
+  }
+]

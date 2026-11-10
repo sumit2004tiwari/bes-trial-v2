@@ -1,0 +1,44 @@
+[
+  {
+    "code": "LM",
+    "name": "LM",
+    "description": "Life Membership",
+    "isActive": true,
+    "sortOrder": 1
+  },
+  {
+    "code": "LF",
+    "name": "LF",
+    "description": "LF",
+    "isActive": true,
+    "sortOrder": 2
+  },
+  {
+    "code": "SM",
+    "name": "LM",
+    "description": "SM",
+    "isActive": true,
+    "sortOrder": 3
+  },
+  {
+    "code": "AM",
+    "name": "AM",
+    "description": "AM",
+    "isActive": true,
+    "sortOrder": 4
+  },
+  {
+    "code": "AF",
+    "name": "AF",
+    "description": "AF",
+    "isActive": true,
+    "sortOrder": 5
+  },
+  {
+    "code": "HF",
+    "name": "HF",
+    "description": "HF",
+    "isActive": true,
+    "sortOrder": 6
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "sizes": [
+    {
+      "viewport": 320,
+      "width": 220,
+      "height": 389,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 320
+    },
+    {
+      "viewport": 390,
+      "width": 220,
+      "height": 389,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 390
+    },
+    {
+      "viewport": 768,
+      "width": 260,
+      "height": 459,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 768
+    },
+    {
+      "viewport": 1024,
+      "width": 260,
+      "height": 459,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 1024
+    },
+    {
+      "viewport": 1440,
+      "width": 260,
+      "height": 459,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 1440
+    },
+    {
+      "viewport": 1920,
+      "width": 260,
+      "height": 459,
+      "fit": "contain",
+      "controls": true,
+      "scroll": 1920
+    }
+  ],
+  "originalAspectRatio": true,
+  "nativeControls": true,
+  "noOverflow": true,
+  "runtimeErrors": []
+}

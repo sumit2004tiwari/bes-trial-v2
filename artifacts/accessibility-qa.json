@@ -1,0 +1,62 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/about_bes/contact_us",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/about_bes/executive_council",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/member_signup",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/galleries/pictures",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/offline.html",
+    "width": 1440,
+    "violations": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "violations": []
+  },
+  {
+    "route": "/about_bes/contact_us",
+    "width": 390,
+    "violations": []
+  },
+  {
+    "route": "/about_bes/executive_council",
+    "width": 390,
+    "violations": []
+  },
+  {
+    "route": "/member_signup",
+    "width": 390,
+    "violations": []
+  },
+  {
+    "route": "/galleries/pictures",
+    "width": 390,
+    "violations": []
+  },
+  {
+    "route": "/offline.html",
+    "width": 390,
+    "violations": []
+  }
+]

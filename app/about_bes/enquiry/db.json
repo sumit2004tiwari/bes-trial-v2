@@ -1,0 +1,43 @@
+[
+  {
+    "key": "name",
+    "name": "Your Name (required)",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "email",
+    "name": "Your Email (required)",
+    "fieldType": "email",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+
+  {
+    "key": "mobile",
+    "name": "Mobile (required)",
+    "required": true,
+    "fieldType": "phone",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "message",
+    "name": "Your Message (required)",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  }
+]

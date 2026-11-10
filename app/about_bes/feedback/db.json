@@ -1,0 +1,93 @@
+[
+  {
+    "key": "name",
+    "name": "Name",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "email",
+    "name": "Your Email (required)",
+    "fieldType": "email",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "designation",
+    "name": "Designation",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "organisation",
+    "name": "Organisation",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "address",
+    "name": "Address",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "city",
+    "name": "City",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "pincode",
+    "name": "Pincode",
+    "fieldType": "number",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "state",
+    "name": "State",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+
+  {
+    "key": "comment",
+    "name": "Comment",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  }
+]

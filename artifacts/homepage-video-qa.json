@@ -1,0 +1,21 @@
+{
+  "source": "/besvideo.mp4",
+  "media": {
+    "duration": 46.4,
+    "width": 480,
+    "height": 848,
+    "error": null
+  },
+  "passed": 9,
+  "checks": [
+    "Responsive native player directly below hero, with controls and no autoplay",
+    "Supplied MP4 is served with byte-range support for seeking",
+    "Actual user-supplied film decodes, plays, and pauses",
+    "Film can seek to another position",
+    "Film fits 320px viewport without cropping or overflow",
+    "Film fits 390px viewport without cropping or overflow",
+    "Film fits 768px viewport without cropping or overflow",
+    "Film fits 1280px viewport without cropping or overflow",
+    "No browser runtime errors during playback"
+  ]
+}

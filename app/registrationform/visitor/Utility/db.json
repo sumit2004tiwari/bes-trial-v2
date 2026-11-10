@@ -1,0 +1,125 @@
+[
+  {
+    "key": "name",
+    "name": "Name",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "organisation",
+    "name": "Organisation",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "city",
+    "name": "City",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "mobile",
+    "name": "Mobile",
+    "required": true,
+    "fieldType": "phone",
+    "type": "text",
+    "options": [],
+    "placeholder": "Mobile Number",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "email",
+    "name": "Email",
+    "fieldType": "email",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "area_of_work",
+    "name": "Area Of Work",
+    "fieldType": "select",
+    "required": true,
+    "type": "select",
+    "options": [
+      {
+        "key": "select_area_of_work",
+        "value": " ",
+        "label": "Select Area Of Work"
+      },
+      {
+        "key": "owner/corporate_management",
+        "value": "Owner/Corporate Management",
+        "label": "Owner/Corporate Management"
+      },
+      {
+        "key": "engineering",
+        "value": "Engineering",
+        "label": "Engineering"
+      },
+      {
+        "key": "general_management",
+        "value": "General Management",
+        "label": "General Management"
+      },
+      {
+        "key": "sales/marketing",
+        "value": "Sales/Marketing",
+        "label": "Sales/Marketing"
+      },
+      {
+        "key": "it",
+        "value": "IT",
+        "label": "IT"
+      },
+      {
+        "key": "education",
+        "value": "Education",
+        "label": "Education"
+      },
+      {
+        "key": "production",
+        "value": "Production",
+        "label": "Production"
+      },
+      {
+        "key": "r&d",
+        "value": "R&D",
+        "label": "R&D"
+      },
+      {
+        "key": "cinematography",
+        "value": "Cinematography",
+        "label": "Cinematography"
+      },
+      {
+        "key": "lighting",
+        "value": "Lighting",
+        "label": "Lighting"
+      },
+      {
+        "key": "any_other_(please_specify)",
+        "value": "Any Other (Please specify)",
+        "label": "Any Other (Please specify)"
+      }
+    ],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  }
+]

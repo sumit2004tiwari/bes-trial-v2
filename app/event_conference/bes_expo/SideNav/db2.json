@@ -1,0 +1,50 @@
+[
+  {
+    "id": "conference_theme",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Conference Theme",
+    "path": "/conference_theme"
+  },
+  {
+    "id": "conference_schedule",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Conference Schedule",
+    "path": "/conference_schedule"
+  },
+  {
+    "id": "list_of_speakers",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "List of Speakers",
+    "path": "/list_of_speakers"
+  },
+  {
+    "id": "call_for_papers",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Call for Papers",
+    "path": "/call_for_papers"
+  },
+  {
+    "id": "who_can_attend",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Who Can Attend?",
+    "path": "/who_can_attend"
+  },
+  {
+    "id": "delegate_fee",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Delegate Fee",
+    "path": "/delegate_fee"
+  }
+]

@@ -1,0 +1,126 @@
+[
+  {
+    "key": "name",
+    "name": "Name",
+    "required": true,
+    "fieldType": "text",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "gender",
+    "name": "Gender",
+    "fieldType": "select",
+    "required": true,
+    "type": "select",
+    "options": [
+      {
+        "key": "select_category",
+        "value": " ",
+        "label": "Select Category"
+      },
+      {
+        "key": "male",
+        "value": "male",
+        "label": "Male"
+      },
+      {
+        "key": "female",
+        "value": "female",
+        "label": "Female"
+      },
+      {
+        "key": "other",
+        "value": "other",
+        "label": "Other"
+      }
+    ],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "dob",
+    "name": "Date Of Birth",
+    "fieldType": "date",
+    "required": true,
+    "type": "date",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "passport number",
+    "name": "Passport Number",
+    "required": true,
+    "fieldType": "number",
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "passport_date_of_issue",
+    "name": "Date Of Issue",
+    "fieldType": "date",
+    "required": true,
+    "type": "date",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "passport_place_of_issue",
+    "name": "Place Of Issue",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+
+  {
+    "key": "passport_valid_date",
+    "name": "Valid Upto",
+    "fieldType": "date",
+    "required": true,
+    "type": "date",
+    "options": [],
+    "value": "",
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "nationality",
+    "name": "Nationality",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "company_name",
+    "name": "Company Name",
+    "fieldType": "text",
+    "required": true,
+    "type": "text",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  },
+  {
+    "key": "company_address",
+    "name": "Company Address",
+    "fieldType": "text",
+    "required": true,
+    "type": "textarea",
+    "options": [],
+    "showError": false,
+    "errorMsg": "This Field is Required"
+  }
+]

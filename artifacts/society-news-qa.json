@@ -1,0 +1,48 @@
+{
+  "headline": "Press Release – BES Mumbai Broadcast Media Technology Seminar 2026",
+  "pdf": "/pdf/others/Press_Release_BES_Mumbai_Broadcast_Media_Technology_Seminar_2026.pdf",
+  "pdfStatus": 200,
+  "infinite": true,
+  "noAutomaticPauses": true,
+  "manualPauseResume": true,
+  "accessibleLinkCount": 1,
+  "reducedMotion": true,
+  "responsive": [
+    {
+      "width": 320,
+      "groupWidth": 1749.46875,
+      "windowWidth": 224,
+      "seamJump": 0.08743858337402344,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "groupWidth": 1749.46875,
+      "windowWidth": 294,
+      "seamJump": 0.08743858337402344,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "groupWidth": 1749.46875,
+      "windowWidth": 511,
+      "seamJump": 0.087432861328125,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1440,
+      "groupWidth": 1749.46875,
+      "windowWidth": 1087,
+      "seamJump": 0.087432861328125,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1920,
+      "groupWidth": 1749.46875,
+      "windowWidth": 1087,
+      "seamJump": 0.087432861328125,
+      "accessibilityViolations": 0
+    }
+  ],
+  "runtimeErrors": []
+}

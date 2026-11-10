@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "es2016", // Target modern JavaScript
+    "jsx": "preserve", // Enable JSX for React projects
+    "baseUrl": "./", // The root directory of your project
+    "paths": {
+      "@/*": [
+        "*"
+      ] // Define the alias for the 'app' directory
+    },
+    "module": "commonjs", // Module system for Node.js compatibility
+    "esModuleInterop": true, // Enable compatibility with CommonJS modules
+    "strict": false, // Enable strict type-checking options
+    "skipLibCheck": true, // Skip type-checking of declaration files
+    "resolveJsonModule": true, // Allows importing JSON files
+    "forceConsistentCasingInFileNames": true, // Ensure case-sensitive file names
+    "moduleResolution": "node", // Module resolution strategy
+    "noImplicitAny": false, // Allow implicit 'any' types
+    "lib": [
+      "dom",
+      "dom.iterable",
+      "esnext"
+    ], // Standard lib files for modern JS
+    "allowJs": false, // Don't allow JavaScript files
+    "noEmit": true, // Don't emit output files
+    "incremental": true, // Enable incremental compilation
+    "isolatedModules": true, // Isolate modules for faster compilation
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ]
+  },
+  "include": [
+    "app/**/*", // Include files in your 'app' directory
+    "next-env.d.ts", // Next.js environment types
+    "**/*.ts", // Include TypeScript files in the project
+    "**/*.tsx" // Include TypeScript JSX files
+    ,
+    ".next/types/**/*.ts",
+    "scripts",
+    ".next/dev/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules", // Exclude 'node_modules' from type-checking
+    "dist" // Exclude build output folder
+  ]
+}

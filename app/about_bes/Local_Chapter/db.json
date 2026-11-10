@@ -1,0 +1,111 @@
+[
+  {
+    "chapter": "Ahmedabad ",
+    "id": 1,
+    "email": "sat_dash@yahoo.co.in",
+    "chairman": "Sh. Satyajeet Dash",
+    "secretary":"Sh. N.L. Chauhan",
+    "treasurer":"Sh. Ramesh Tale",
+    "mobile":"9869445483"
+
+  },
+  {
+    "chapter": "Bangalore ",
+    "id": 2,
+    "email": "amangalgi@yahoo.com",
+    "chairman": "Sh. Anil Mangalgi",
+    "secretary":"Sh. N. Madhava Reddy",
+    "treasurer":"Sh. Ravindra J. Nawati",
+    "mobile":"9448490241"
+  },
+  {
+    "chapter": "Bhubaneshwar",
+    "id": 3,
+    "email": "prakashstit@yahoo.co.in",
+    "chairman": "Sh. L.K. Pradhan",
+    "secretary":"Sh. P.K. Pati",
+    "treasurer":"Sh. N. Jethi",
+    "mobile":"9437037057"
+  },
+  {
+    "chapter": "Chennai",
+    "id": 4,
+    "email": "muthusami63@gmail.com",
+    "chairman": "Sh. S. Muthusami",
+    "secretary":"Sh. N. Dakshina Murthy",
+    "treasurer":"Sh. P. Bhoopathy",
+    "mobile":"9445796945"
+  },
+  {
+    "chapter": "Jaipur",
+    "id": 5,
+    "email": "besrajasthan@rediffmail.com",
+    "chairman": "  Sh. Sanjay Sethi",
+    "secretary":"Sh. N.K. Khandelwal",
+    "treasurer":"Sh. M.C. Bansal",
+    "mobile":"9414051284"
+  },
+  {
+    "chapter": "Kolkatta ",
+    "id": 6,
+    "email": "rgdastidar@hotmail.com",
+    "chairman": "Sh. Ratan Ghosh Dastidar",
+    "secretary":"Sh. Rajat Bose",
+    "treasurer":"Sh. Jiten Kumar Ray",
+    "mobile":"8800281446"
+  },
+  {
+    "chapter": "Hyderabad",
+    "id": 7,
+    "email": "tsryem@gmail.com",
+    "chairman": "Sh. N.V, Ramana",
+    "secretary":"Er. Nuli Namassivaya",
+    "treasurer":"Sh. B. Hari Singh",
+    "mobile":"9958849797"
+  },
+  {
+    "chapter": "Mumbai",
+    "id": 8,
+    "email": "krkdas@gmail.com",
+    "chairman": "Sh. R. Krishnadas",
+    "secretary":"Ms. Meenakshi Singhvi",
+    "treasurer":"Sh. P.S. Khurana",
+    "mobile":"9495152727"
+  },
+  {
+    "chapter": "Thanjavur",
+    "id": 9,
+    "email": "besthanjavur@gmail.com ",
+    "chairman": "Ms. A. Chitra ",
+    "secretary":"Sh. S. Periyandavar",
+    "treasurer":"Sh. R. Natarajan",
+    "mobile":"9443782765"
+  },
+  {
+    "chapter": "Thiruvananthapuram",
+    "id": 10,
+    "email": "besintvm@gmail.com",
+    "chairman": "Dr. A G Baiju",
+    "secretary":"Sh. K N Gopala Krishnan",
+    "treasurer":"Sh. Radhakrishna Pillai C.",
+    "mobile":""
+  },
+  {
+    "chapter": "Pune",
+    "id": 11,
+    "email": "abroadcaster0@gmail.com",
+    "chairman": "Sh. Ashish Bhatnagar",
+    "secretary":"Sh. R.K. Ranjekar",
+    "treasurer":"Sh. Ashok Bhapker",
+    "mobile":"9421053428"
+  },
+  {
+    "chapter": "Guwahati",
+    "id": 12,
+    "email": "",
+    "chairman": "",
+    "secretary":"Sh. R.C. Boro",
+    "treasurer":"",
+    "mobile":""
+  }
+]

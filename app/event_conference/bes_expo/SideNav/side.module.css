@@ -1,0 +1,36 @@
+.sideNav ul {
+  list-style-type: disc;
+  padding-left: 26px;
+}
+.sideNav ul li {
+  cursor: pointer;
+}
+
+.sideNav {
+  border-radius: 10px;
+}
+.sideNav ul li > a {
+  position: relative;
+  padding-bottom: 10px;
+  display: inline-block;
+}
+.sideNav ul li > a::before {
+  position: absolute;
+  left: 0;
+  bottom: 10px;
+  content: "";
+  transform: scale(-1);
+  width: 0%;
+  display: block;
+  height: 2px;
+  background: white;
+  transition: all 0.3s ease;
+}
+
+.sideNav ul li > a:hover::before {
+  width: 100%;
+}
+
+.sideNav ul li > .selected::before {
+  width: 100%;
+}

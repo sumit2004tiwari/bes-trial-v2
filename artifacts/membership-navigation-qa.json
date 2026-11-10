@@ -1,0 +1,94 @@
+[
+  {
+    "width": 1920,
+    "logo": {
+      "left": 320,
+      "right": 545
+    },
+    "nav": {
+      "left": 633.03125,
+      "right": 1377.15625
+    },
+    "account": {
+      "left": 1465.1875,
+      "right": 1600
+    },
+    "label": "Become a Member",
+    "other": false,
+    "overflow": false
+  },
+  {
+    "width": 1440,
+    "logo": {
+      "left": 80,
+      "right": 305
+    },
+    "nav": {
+      "left": 393.03125,
+      "right": 1137.15625
+    },
+    "account": {
+      "left": 1225.1875,
+      "right": 1360
+    },
+    "label": "Become a Member",
+    "other": false,
+    "overflow": false
+  },
+  {
+    "width": 1280,
+    "logo": {
+      "left": 48,
+      "right": 238
+    },
+    "nav": {
+      "left": 347.546875,
+      "right": 987.65625
+    },
+    "account": {
+      "left": 1097.1875,
+      "right": 1232
+    },
+    "label": "Become a Member",
+    "other": false,
+    "overflow": false
+  },
+  {
+    "width": 1200,
+    "logo": {
+      "left": 48,
+      "right": 238
+    },
+    "nav": {
+      "left": 307.546875,
+      "right": 947.65625
+    },
+    "account": {
+      "left": 1017.1875,
+      "right": 1152
+    },
+    "label": "Become a Member",
+    "other": false,
+    "overflow": false
+  },
+  {
+    "width": 1024,
+    "mobileNavigation": "passed",
+    "drawerCloses": true
+  },
+  {
+    "width": 768,
+    "mobileNavigation": "passed",
+    "drawerCloses": true
+  },
+  {
+    "width": 390,
+    "mobileNavigation": "passed",
+    "drawerCloses": true
+  },
+  {
+    "width": 320,
+    "mobileNavigation": "passed",
+    "drawerCloses": true
+  }
+]

@@ -1,0 +1,125 @@
+[
+  {
+    "name": "Shri Sunil",
+    "design": "President, BES (I)",
+    "email": "sunil.ddi@gmail.com",
+    "img": "sunil.jpg",
+    "id": 1
+  },
+  {
+    "name": "Shri C.B.S. Maurya",
+    "design": "Immediate Past President, BES (I)",
+    "email": "cbsmaurya@gmail.com",
+    "img": "CBSMaurya.jpg",
+    "id": 2
+  },
+  {
+    "name": "Shri I.I.George",
+    "design": "Past President, BES (I)",
+    "email": "iigeorge@hotmail.com",
+    "img": "iigeorge.jpg",
+    "id": 3
+  },
+  {
+    "name": "Shri Aftab Ahmad",
+    "design": "Hon. Secretary",
+    "email": "aftabahmad1@rediffmail.com",
+    "img": "AftabAhmad.jpg",
+    "id": 4
+  },
+  {
+    "name": "Shri O.P Rajpurohit",
+    "design": "Hon. Treasurer BES(I)",
+    "email": "oprajpurohit@yahoo.com",
+    "img": "oprajpurohit.jpg",
+    "id": 5
+  },
+  {
+    "name": "Shri P.S. Srivastava",
+    "design": "Vice President",
+    "email": "pss_18@yahoo.com",
+    "img": "pssrivastava.jpg",
+    "id": 6
+  },
+  {
+    "name": "Shri K.K. Rao",
+    "design": "Vice President",
+    "email": "krishnarao73@yahoo.co.in",
+    "img": "kkrao.jpg",
+    "id": 7
+  },
+  {
+    "name": "Shri Dinesh Pratap Singh",
+    "design": "Council Member",
+    "email": "dpsddi@gmail.com",
+    "img": "dineshpratapsingh.jpg",
+    "id": 8
+  },
+  {
+    "name": "Shri A.K. Jha",
+    "design": "Council Member",
+    "email": "jhashok@gmail.com",
+    "img": "akjha.jpeg",
+    "id": 9
+  },
+  {
+    "name": "Shri Rajeev Kumar",
+    "design": "Council Member",
+    "email": "rajeev00kumar@yahoo.com ",
+    "img": "RajeevKumar.jpg",
+    "id": 10
+  },
+  {
+    "name": "Shri Surender Singh",
+    "design": "Council Member",
+    "email": "surendersingh1967@rediffmail.com",
+    "img": "SurenderSingh.jpg",
+    "id": 11
+  },
+  {
+    "name": "Shri Ved Prakash",
+    "design": "Council Member",
+    "email": "vedprakash67@gmail.com",
+    "img": "vedprakash.jpg",
+    "id": 12
+  },
+  {
+    "name": "Shri P. Das",
+    "design": "Council Member",
+    "email": "pdasdelhi@gmail.com",
+    "img": "",
+    "id": 13
+  },
+
+  {
+    "name": "Shri Aditya Chaturvedi",
+    "design": "Council Member",
+    "email": "adityachaturvedi75@hotmail.com ",
+    "img": "",
+    "id": 14
+  },
+
+  {
+    "name": "Ms Meenakshi Singhvi",
+    "design": "Council Member",
+    "email": "meenakshisinghvi13@gmail.com",
+    "img": "meenakshisinghvi.jpg",
+    "id": 15
+  },
+
+  {
+    "name": "Shri Raju Varghese",
+    "design": "Council Member",
+    "email": "varj34@hotmail.com ",
+    "img": "",
+    "id": 16
+  },
+
+  {
+    "name": "Shri Prakash veer",
+    "design": "Council Member",
+    "email": "pvt_1967@yahoo.com",
+    "img": "prakashveer.jpg",
+    "id": 17
+  }
+]

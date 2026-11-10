@@ -1,0 +1,70 @@
+name: Auto Commit for Owner Account
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  auto_commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      # Step 1: Checkout the repository
+      - name: Checkout code
+        uses: actions/checkout@v5
+        with:
+          ref: master
+
+      # Step 2: Set up Git configuration for Account A (Owner)
+      - name: Set up Git for Account A (Owner)
+        run: |
+          git config user.name "${{ secrets.OWNER_USERNAME }}"
+          git config user.email "${{ secrets.OWNER_EMAIL }}"
+
+      # Step 3: Get the last commit message (MULTILINE SAFE)
+      - name: Get last commit message
+        run: |
+          {
+            echo "COMMIT_MSG<<EOF"
+            git log -1 --pretty=%B
+            echo "EOF"
+          } >> $GITHUB_ENV
+
+      # Step 4: Debug - Print last commit author
+      - name: Debug - Print commit author
+        run: |
+          LAST_COMMIT_AUTHOR=$(git log -1 --pretty=%ae)
+          echo "Last Commit Author: $LAST_COMMIT_AUTHOR"
+
+      # Step 5: Check if the commit was made by Account A (Owner)
+      - name: Check if commit is from Account A (Owner)
+        run: |
+          LAST_COMMIT_AUTHOR=$(git log -1 --pretty=%ae)
+
+          echo "Last Commit Author: $LAST_COMMIT_AUTHOR"
+          echo "Owner Email: ${{ secrets.OWNER_EMAIL }}"
+
+          if [[ "$LAST_COMMIT_AUTHOR" == "${{ secrets.OWNER_EMAIL }}" ]]; then
+            echo "Commit made by owner. Skipping auto commit."
+            echo "SKIP_COMMIT=true" >> $GITHUB_ENV
+          else
+            echo "Commit made by non-owner. Proceeding."
+            echo "SKIP_COMMIT=false" >> $GITHUB_ENV
+          fi
+
+      # Step 6: Create a new commit from Account A (MULTILINE SAFE)
+      - name: Create a commit from Account A
+        if: env.SKIP_COMMIT == 'false'
+        run: |
+          echo "deploy -- $COMMIT_MSG" > commit_message.txt
+
+          git commit --allow-empty -F commit_message.txt
+
+      # Step 7: Push the new commit from Account A (Owner)
+      - name: Push changes from Account A (Owner)
+        if: env.SKIP_COMMIT == 'false'
+        run: |
+          git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git master

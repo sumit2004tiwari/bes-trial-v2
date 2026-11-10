@@ -1,0 +1,345 @@
+[
+  {
+    "id": 0,
+    "name": "Home",
+    "path": "/",
+    "normalLink": false,
+    "parentPath": "",
+    "isSeprateParentPath": true,
+    "haveChildren": "no",
+    "isExpandable": false,
+    "isLink": true,
+    "isActive": true,
+    "subChildren": []
+  },
+  {
+    "id": 1,
+    "name": "BES India",
+    "path": "/about_bes",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "isActive": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "At a Glance",
+        "path": "/at_glance",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": "Background",
+        "path": "/background",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 3,
+        "name": "Aims and objectives",
+        "path": "/aim_and_objective",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 4,
+        "name": "Executive Council",
+        "path": "/executive_council",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 5,
+        "name": "Committees",
+        "path": "/committees",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 6,
+        "name": "Local Chapter",
+        "path": "/Local_Chapter",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 7,
+        "name": "Membership",
+        "path": "/membership",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 8,
+        "name": "Previous Council",
+        "path": "/previous_council",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+     
+      {
+        "id": 11,
+        "isSeprateParentPath": true,
+        "parentPath": "/",
+        "externalLink": "document",
+        "name": "Memorandum (Bylaws)",
+        "path": "pdf/others/memorandum-by-laws.pdf",
+        "target": "_blank",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 12,
+        "isSeprateParentPath": true,
+        "parentPath": "/",
+        "name": "FR-OP",
+        "path": "pdf/others/fr_op.pdf",
+        "externalLink": "document",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "target": "_blank",
+        "subChildren": []
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Events",
+    "path": "/event_conference",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "isActive": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Forthcoming Events",
+        "path": "",
+        "haveChildren": "yes",
+        "isExpandable": true,
+        "isActive": true,
+        "subChildren": [
+          {
+            "id": 1,
+            "name": "BES EXPO-2027",
+            "path": "/bes_expo/exibition/history",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": true,
+            "subChildren": []
+          }
+         
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Previous Events",
+        "path": "",
+        "haveChildren": "yes",
+        "isExpandable": true,
+        "isActive": true,
+        "subChildren": [
+          {
+            "id": 1,
+            "name": "Past Event",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": false,
+            "subChildren": []
+          },
+          {
+            "id": 6,
+            "name": "BES EXPOs",
+            "path": "/expos",
+            "parentPath": "/event_conference/other_events",
+            "isSeprateParentPath": true,
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": true,
+            "subChildren": []
+          },
+          {
+            "id": 2,
+            "name": "Seminars",
+            "path": "/seminars",
+            "parentPath": "/event_conference/other_events",
+            "isSeprateParentPath": true,
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": true,
+            "subChildren": []
+          },
+           {
+            "id": 7,
+            "name": "Other Events",
+            "path": "/other_events",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": true,
+            "subChildren": [
+           
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Public Service B' Day",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": false,
+            "subChildren": []
+          },
+          {
+            "id": 4,
+            "name": "Others",
+            "path": "",
+            "haveChildren": "no",
+            "isExpandable": false,
+            "isActive": false,
+            "subChildren": []
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Publications",
+    "path": "",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "isActive": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "POST BES EXPO 2024 REPORT",
+        "isSeprateParentPath": true,
+        "parentPath": "/",
+        "path": "pdf/others/bes_report_2024.pdf",
+        "externalLink": "document",
+        "haveChildren": "false",
+        "isExpandable": false,
+        "isActive": false,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": " BES Expo 2024 Presentation",
+        "isSeprateParentPath": true,
+        "parentPath": "/",
+        "path": "pdf/others/bes_event_presentation_20241.pdf",
+        "externalLink": "document",
+        "haveChildren": "false",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 3,
+        "name": "BES Review oct to dec 2025",
+        "isSeprateParentPath": true,
+        "parentPath": "/",
+        "path": "pdf/others/review-oct25.pdf",
+        "externalLink": "document",
+        "haveChildren": "false",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Become a Member",
+    "path": "/about_bes/membership",
+    "haveChildren": "no",
+    "isExpandable": false,
+    "isActive": true,
+    "subChildren": []
+  },
+  {
+    "id": 6,
+    "name": "Galleries",
+    "path": "/galleries",
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "isActive": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Pictures",
+        "path": "/pictures",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": "Videos",
+        "path": "/videos",
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isActive": false,
+        "subChildren": []
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Contact",
+    "path": "/about_bes/contact_us",
+    "normalLink": true,
+    "parentPath": "",
+    "isSeprateParentPath": true,
+    "haveChildren": "yes",
+    "isExpandable": true,
+    "isLink": true,
+    "isActive": true,
+    "subChildren": [
+      {
+        "id": 1,
+        "name": "Contact Us",
+        "path": "/contact_us",
+        "parentPath": "/about_bes",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+      },
+      {
+        "id": 2,
+        "name": "Enquiry",
+        "path": "/enquiry",
+        "parentPath": "/about_bes",
+        "isSeprateParentPath": true,
+        "haveChildren": "no",
+        "isExpandable": false,
+        "isLink": true,
+        "isActive": true,
+        "subChildren": []
+      }
+    ]
+  }
+]

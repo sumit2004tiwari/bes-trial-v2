@@ -1,0 +1,138 @@
+[
+  {
+    "id": "history",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "BES Expo-2027",
+    "path": "/history"
+  },
+  {
+    "id": "venue",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Venue",
+    "path": "/venue"
+  },
+  {
+    "id": "brochure",
+    "subChildren": [],
+    "isExpandable": false,
+    "isSeprateParentPath": true,
+    "parentPath": "/",
+    "haveChildren": "no",
+    "name": "Brochure",
+    "path": ""
+  },
+  {
+    "id": "floor_plan",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Floor Plan",
+    "path": "/floor_plan"
+  },
+  {
+    "id": "who_can_participate",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Who can Participate",
+    "path": "/who_can_participate"
+  },
+  {
+    "id": "products_on_display",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Products on Display",
+    "path": "/products_on_display"
+  },
+  {
+    "id": "participation_fee",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Participation Fee",
+    "path": "/participation_fee"
+  },
+  {
+    "id": "bes_bank_details",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "BES Bank Details",
+    "path": "/bes_bank_details"
+  },
+  {
+    "id": "official_hotel",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Official Hotel",
+    "path": "/official_hotel"
+  },
+  {
+    "id": "c_&_f_agents",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "C & F Agents",
+    "path": "/c_&_f_agents"
+  },
+  {
+    "id": "visa_certificate",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Visa Certificate",
+    "path": "/visa_certificate"
+  },
+  {
+    "id": "list_of_exhibitors",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "List of Exhibitors",
+    "path": "/list_of_exhibitors"
+  },
+  {
+    "id": "guidelines_&_rules",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Guidelines & Rules",
+    "path": "/guidelines_&_rules"
+  },
+  {
+    "id": "sponsorship_opportunities",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Sponsorship Opportunities",
+    "path": "/sponsorship_opportunities"
+  },
+  {
+    "id": "visitor_registration_",
+    "subChildren": [],
+    "isExpandable": false,
+    "target": "_self",
+    "haveChildren": "no",
+    "isSeprateParentPath": true,
+    "parentPath": "/registrationform",
+    "name": "Visitor Registration",
+    "path": "/visitor"
+  },
+  {
+    "id": "delegate_registration",
+    "subChildren": [],
+    "isExpandable": false,
+    "isSeprateParentPath": true,
+    "target": "_self",
+    "parentPath": "/registrationform",
+    "haveChildren": "no",
+    "name": "Delegate Registration",
+    "path": "/delegateregistration"
+  }
+]

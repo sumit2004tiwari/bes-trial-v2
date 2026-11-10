@@ -1,0 +1,26 @@
+[
+  {
+    "id": 0,
+    "name": "My Account",
+    "path": "user/myaccount",
+    "normalLink": true,
+    "parentPath": "/",
+    "isSeprateParentPath": true,
+    "haveChildren": "no",
+    "isExpandable": false,
+    "isLink": true,
+    "subChildren": []
+  },
+  {
+    "id": 1,
+    "name": "Sign Out",
+    "path": "user/signout",
+    "normalLink": true,
+    "parentPath": "/",
+    "isSeprateParentPath": true,
+    "haveChildren": "no",
+    "isExpandable": false,
+    "isLink": true,
+    "subChildren": []
+  }
+]

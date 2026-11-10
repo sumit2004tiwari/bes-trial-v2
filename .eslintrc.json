@@ -1,0 +1,12 @@
+{
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "no-warning-comments": [
+      "warn",
+      {
+        "terms": ["@ts-expect-error"],
+        "location": "start"
+      }
+    ]
+  }
+}

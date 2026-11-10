@@ -1,0 +1,43 @@
+{
+  "target": "2027-02-11T10:00:00+05:30",
+  "singleTimer": true,
+  "realTicking": true,
+  "rollovers": true,
+  "expiry": true,
+  "reducedMotion": true,
+  "timezoneIndependent": true,
+  "interiorPages": true,
+  "responsive": [
+    {
+      "width": 1440,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 600,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "overflow": false,
+      "accessibilityViolations": 0
+    }
+  ],
+  "runtimeErrors": []
+}

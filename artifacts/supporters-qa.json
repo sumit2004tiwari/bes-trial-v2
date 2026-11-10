@@ -1,0 +1,40 @@
+{
+  "responsive": [
+    {
+      "width": 1440,
+      "columns": 3,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 1024,
+      "columns": 3,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 768,
+      "columns": 2,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 390,
+      "columns": 1,
+      "overflow": false,
+      "accessibilityViolations": 0
+    },
+    {
+      "width": 320,
+      "columns": 1,
+      "overflow": false,
+      "accessibilityViolations": 0
+    }
+  ],
+  "logosLoaded": 6,
+  "existingLinks": 5,
+  "hover3d": true,
+  "keyboardFocus": true,
+  "reducedMotion": true,
+  "runtimeErrors": []
+}

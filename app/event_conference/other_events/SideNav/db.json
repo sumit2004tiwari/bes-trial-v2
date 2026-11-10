@@ -1,0 +1,38 @@
+[
+  {
+    "id": "expos",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Expos",
+    "path": "/expos"
+  },
+  {
+    "id": "seminars",
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Seminars",
+    "path": "/seminars"
+  },
+  {
+    "id": "public_service_bday",
+    "isActive": false,
+    "subChildren": [],
+    "isExpandable": false,
+    "isSeprateParentPath": false,
+
+    "haveChildren": "no",
+    "name": "Public Service B' Day",
+    "path": "/public_service_bday"
+  },
+  {
+    "id": "others",
+    "isActive": false,
+    "subChildren": [],
+    "isExpandable": false,
+    "haveChildren": "no",
+    "name": "Others",
+    "path": "/others"
+  }
+]
