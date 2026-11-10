@@ -14,7 +14,7 @@ import Partener from "./UIComponent/Carousel/HomePage/Partener";
 import { resourceUrl } from "./UIComponent/design/resource-url";
 
 const expo = "/event_conference/bes_expo";
-console.log("just checking ")
+console.log("just checking  ")
 export default async function Home() {
   const [slides, content, services] = await Promise.all([
     getHomepageCarouselSlides(), getHomepageContent(),
