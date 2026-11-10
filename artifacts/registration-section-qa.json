@@ -1,0 +1,416 @@
+{
+  "results": [
+    {
+      "width": 1920,
+      "documentWidth": 1920,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": 0.359375,
+        "width": 1920,
+        "height": 275.796875
+      },
+      "news": {
+        "x": 0,
+        "y": -73.640625,
+        "width": 1920,
+        "height": 74
+      },
+      "buttons": [
+        {
+          "x": 320,
+          "y": 147.15625,
+          "width": 416,
+          "height": 80,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 414,
+          "clientWidth": 414
+        },
+        {
+          "x": 752,
+          "y": 147.15625,
+          "width": 416,
+          "height": 80,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 414,
+          "clientWidth": 414
+        },
+        {
+          "x": 1184,
+          "y": 147.15625,
+          "width": 416,
+          "height": 80,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 414,
+          "clientWidth": 414
+        }
+      ]
+    },
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": -0.109375,
+        "width": 1440,
+        "height": 271.1875
+      },
+      "news": {
+        "x": 0,
+        "y": -74.109375,
+        "width": 1440,
+        "height": 74
+      },
+      "buttons": [
+        {
+          "x": 80,
+          "y": 142.078125,
+          "width": 416,
+          "height": 80,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 414,
+          "clientWidth": 414
+        },
+        {
+          "x": 512,
+          "y": 142.078125,
+          "width": 416,
+          "height": 80,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 414,
+          "clientWidth": 414
+        },
+        {
+          "x": 944,
+          "y": 142.078125,
+          "width": 416,
+          "height": 80,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 414,
+          "clientWidth": 414
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": -0.171875,
+        "width": 1024,
+        "height": 261.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -74.171875,
+        "width": 1024,
+        "height": 74
+      },
+      "buttons": [
+        {
+          "x": 32,
+          "y": 132.8125,
+          "width": 309.328125,
+          "height": 80,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 307,
+          "clientWidth": 307
+        },
+        {
+          "x": 357.328125,
+          "y": 132.8125,
+          "width": 309.328125,
+          "height": 80,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 307,
+          "clientWidth": 307
+        },
+        {
+          "x": 682.65625,
+          "y": 132.8125,
+          "width": 309.34375,
+          "height": 80,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 307,
+          "clientWidth": 307
+        }
+      ]
+    },
+    {
+      "width": 900,
+      "documentWidth": 900,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": 0.265625,
+        "width": 900,
+        "height": 261.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -73.734375,
+        "width": 900,
+        "height": 74
+      },
+      "buttons": [
+        {
+          "x": 32,
+          "y": 133.25,
+          "width": 268,
+          "height": 80,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 266,
+          "clientWidth": 266
+        },
+        {
+          "x": 316,
+          "y": 133.25,
+          "width": 268,
+          "height": 80,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 266,
+          "clientWidth": 266
+        },
+        {
+          "x": 600,
+          "y": 133.25,
+          "width": 268,
+          "height": 80,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 266,
+          "clientWidth": 266
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": -0.15625,
+        "width": 768,
+        "height": 264.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -74.15625,
+        "width": 768,
+        "height": 74
+      },
+      "buttons": [
+        {
+          "x": 32,
+          "y": 132.828125,
+          "width": 224,
+          "height": 83,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 222,
+          "clientWidth": 222
+        },
+        {
+          "x": 272,
+          "y": 132.828125,
+          "width": 224,
+          "height": 83,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 222,
+          "clientWidth": 222
+        },
+        {
+          "x": 512,
+          "y": 132.828125,
+          "width": 224,
+          "height": 83,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 222,
+          "clientWidth": 222
+        }
+      ]
+    },
+    {
+      "width": 767,
+      "documentWidth": 767,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": 0.171875,
+        "width": 767,
+        "height": 458.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -120.96875,
+        "width": 767,
+        "height": 121.140625
+      },
+      "buttons": [
+        {
+          "x": 20,
+          "y": 182.15625,
+          "width": 727,
+          "height": 72,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 725,
+          "clientWidth": 725
+        },
+        {
+          "x": 20,
+          "y": 266.15625,
+          "width": 727,
+          "height": 72,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 725,
+          "clientWidth": 725
+        },
+        {
+          "x": 20,
+          "y": 350.15625,
+          "width": 727,
+          "height": 72,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 725,
+          "clientWidth": 725
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": 0.390625,
+        "width": 390,
+        "height": 458.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -120.75,
+        "width": 390,
+        "height": 121.140625
+      },
+      "buttons": [
+        {
+          "x": 20,
+          "y": 182.375,
+          "width": 350,
+          "height": 72,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 348,
+          "clientWidth": 348
+        },
+        {
+          "x": 20,
+          "y": 266.375,
+          "width": 350,
+          "height": 72,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 348,
+          "clientWidth": 348
+        },
+        {
+          "x": 20,
+          "y": 350.375,
+          "width": 350,
+          "height": 72,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 348,
+          "clientWidth": 348
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "directlyAfterNews": true,
+      "section": {
+        "x": 0,
+        "y": 0.40625,
+        "width": 320,
+        "height": 458.984375
+      },
+      "news": {
+        "x": 0,
+        "y": -120.734375,
+        "width": 320,
+        "height": 121.140625
+      },
+      "buttons": [
+        {
+          "x": 20,
+          "y": 182.390625,
+          "width": 280,
+          "height": 72,
+          "label": "Register as a Visitor",
+          "href": "/registrationform/visitor",
+          "contentWidth": 278,
+          "clientWidth": 278
+        },
+        {
+          "x": 20,
+          "y": 266.390625,
+          "width": 280,
+          "height": 72,
+          "label": "Register as a Delegate",
+          "href": "/registrationform/delegateregistration",
+          "contentWidth": 278,
+          "clientWidth": 278
+        },
+        {
+          "x": 20,
+          "y": 350.390625,
+          "width": 280,
+          "height": 72,
+          "label": "Book Exhibition Space",
+          "href": "/event_conference/bes_expo/exibition/participation_fee",
+          "contentWidth": 278,
+          "clientWidth": 278
+        }
+      ]
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Register as a Visitor",
+      "href": "/registrationform/visitor",
+      "navigated": true
+    },
+    {
+      "label": "Register as a Delegate",
+      "href": "/registrationform/delegateregistration",
+      "navigated": true
+    },
+    {
+      "label": "Book Exhibition Space",
+      "href": "/event_conference/bes_expo/exibition/participation_fee",
+      "navigated": true
+    }
+  ],
+  "keyboard": "passed",
+  "reducedMotion": "passed",
+  "accessibility": "No WCAG A/AA violations"
+}
