@@ -8,6 +8,8 @@ import { getHomepageVideoFallback } from "./homepage/homepage-video";
 import { HOMEPAGE } from "./Utility/Constant";
 import HeroVisual from "./UIComponent/design/HeroVisual";
 import EventFilm from "./UIComponent/design/EventFilm";
+import EventPhotoCarousel from "./UIComponent/design/EventPhotoCarousel";
+import Testimonials from "./UIComponent/design/Testimonials";
 import SocietyNews from "./UIComponent/design/SocietyNews";
 import { Icon } from "./UIComponent/design/Icons";
 import Partener from "./UIComponent/Carousel/HomePage/Partener";
@@ -80,11 +82,9 @@ export default async function Home() {
 
     <section className="society-section" aria-labelledby="society-title"><div className="site-container society-grid"><div className="society-image"><Image src="/Images/homepage_exclusive_images/9J4A7583.jpg" alt="A speaker sharing broadcast expertise at a BES EXPO conference" fill sizes="(max-width: 900px) 90vw, 45vw" /></div><div className="society-copy"><div className="eyebrow">Broadcast Engineering Society (India) · Since 1987</div><h2 id="society-title">A professional society.<br />A shared purpose.</h2><p>BES India is a community for people who work in broadcast engineering. Established in New Delhi in 1987, the Society supports the exchange of technical knowledge through conferences, seminars, tutorials, and exhibitions.</p><p>Our work continues beyond the annual EXPO. Through local chapters, the BES Review technical journal, and opportunities for professional exchange, members stay connected to the practice and development of broadcasting.</p><div className="hero-actions"><Link href="/about_bes/at_glance" className="button button-gold">About the Society<Icon name="arrow" /></Link><Link href="/about_bes/membership" className="text-link-light">Explore membership<Icon name="diagonal" width={18} height={18} /></Link></div></div></div></section>
 
-    <section className="home-section" aria-labelledby="gallery-title"><div className="site-container"><div className="section-heading"><div><div className="eyebrow">The BES archive</div><h2 id="gallery-title">An industry, in good company.</h2></div><p>A look at the talks, exhibition stands, and encounters that make BES EXPO a place to reconnect with the industry.</p></div><div className="home-gallery">{[
-      { src: "/Images/homepage_exclusive_images/9J4A7080.jpg", title: "At the conference", text: "Technical knowledge shared across the room.", label: "SESSIONS & DISCUSSIONS" },
-      { src: "/Images/ImageGallery/2026/WhatsApp Image 2026-01-31 at 16.38.35 (1).jpeg", title: "On the exhibition floor", text: "Equipment, demonstrations, and direct conversations.", label: "TECHNOLOGY & EXHIBITORS" },
-      { src: "/Images/homepage_exclusive_images/9J4A7687.jpg", title: "Among the community", text: "Colleagues and peers brought together by broadcasting.", label: "PEOPLE & OCCASIONS" },
-    ].map(photo => <Link href="/galleries/pictures" className="gallery-story" key={photo.src}><div><Image src={photo.src} alt={photo.title} fill sizes="(max-width: 700px) 90vw, 40vw" /></div><span className="eyebrow">{photo.label}</span><h3>{photo.title}<Icon name="diagonal" /></h3><p>{photo.text}</p></Link>)}</div><Link href="/galleries/pictures" className="text-link gallery-all">View photographs by year<Icon name="arrow" /></Link></div></section>
+    <EventPhotoCarousel />
+
+    <Testimonials />
 
     <section className="home-section resources-section" aria-labelledby="plan-title"><div className="site-container resources-grid"><div><div className="eyebrow">Before you arrive</div><h2 id="plan-title">Make a plan<br />for your visit.</h2><p>Check the venue, review the exhibition layout, and look through the conference programme. Keep the event details close at hand so you can spend more time on the conversations that matter.</p>{brochure?.url && <Link className="text-link" href={resourceUrl(brochure.url)} target={brochure.target || "_blank"} rel="noopener noreferrer"><Icon name="download" />Download {brochure.label.toLowerCase()}</Link>}</div><div className="resource-links">{[
       { title: "Dates & venue", text: "Find the event location and plan your journey to Bharat Mandapam.", icon: "pin", href: `${expo}/exibition/venue` },
