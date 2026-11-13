@@ -21,7 +21,7 @@ export default function Testimonials() {
       <div className="testimonials-heading">
         <div className="eyebrow">Voices from BES EXPO</div>
         <h2 id="testimonials-title">Hear it from our community.</h2>
-        <p>Five perspectives on the BES EXPO experience. Press play to hear their stories.</p>
+        {/* <p>Five perspectives on the BES EXPO experience. Press play to hear their stories.</p> */}
       </div>
       <div className="testimonials-grid">
         {testimonials.map((video, index) => {
@@ -42,11 +42,11 @@ export default function Testimonials() {
                 <span className="testimonial-cover-shade" aria-hidden="true" />
                 <span className="testimonial-format" aria-hidden="true">BES EXPO · STORIES</span>
                 <span className="testimonial-play" aria-hidden="true"><svg width="25" height="25" viewBox="0 0 24 24" fill="currentColor"><path d="m8 4 12 8-12 8z" /></svg></span>
-                <span className="testimonial-cover-caption" aria-hidden="true">From our community<span>Watch their story</span></span>
+                {/* <span className="testimonial-cover-caption" aria-hidden="true">From our community<span>Watch their story</span></span> */}
               </button>}
             </div>
             <div className="testimonial-details">
-              <h3 id={`testimonial-${video.id}`}>Testimonial {number}</h3>
+              {/* <h3 id={`testimonial-${video.id}`}></h3> */}
               {isPlaying && <button type="button" className="testimonial-stop" aria-label={`Stop ${title}`} onClick={() => setActiveVideo(null)}>Stop video<Icon name="close" width={14} height={14} /></button>}
               <a href={video.url} target="_blank" rel="noopener noreferrer" className="testimonial-youtube" aria-label={`Watch ${title} on YouTube (opens in a new tab)`}>Watch on YouTube<Icon name="diagonal" width={15} height={15} /></a>
             </div>

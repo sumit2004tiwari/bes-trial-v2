@@ -4,10 +4,10 @@ import { Icon } from "@/app/UIComponent/design/Icons";
 const partners = [
   { href: "https://mib.gov.in/", src: "/Images/homepage/MIB_Logo.png", alt: "Ministry of Information and Broadcasting" },
   { href: "https://www.meity.gov.in/", src: "/Images/homepage/meity.jpg", alt: "Ministry of Electronics and Information Technology" },
-  { href: "https://prasarbharati.gov.in/doordarshan/", src: "/Images/homepage/doordarshan.png", alt: "Doordarshan" },
+  { href: "https://prasarbharati.gov.in/doordarshan/", src: "/Images/homepage/doordarshan.png", alt: "Prasar Bharati" },
   { href: "https://www.abu.org.my/", src: "/Images/homepage/abu_1.jpg", alt: "Asia-Pacific Broadcasting Union" },
   { href: "http://www.aesindia.org", src: "/Images/homepage/aes.png", alt: "Audio Engineering Society India" },
-  { href: "", src: "/Images/homepage/aimbda.jpg", alt: "AIMBDA" },
+  { href: "", src: "/Images/homepage/aimbda.jpg", alt: "All India Broadcast Manufactures and Distributors Association" },
 ];
 export default function Partener() {
   return (
@@ -16,9 +16,8 @@ export default function Partener() {
         <div className="section-heading partners-heading">
           <div>
             <div className="eyebrow"><span className="eyebrow-rule" />Our supporting organisations</div>
-            <h2 id="partners-title">Approved &amp; supported by</h2>
+            <h2 id="partners-title">Approved &amp; Supported by</h2>
           </div>
-          <p>The institutions and industry associations supporting BES EXPO.</p>
         </div>
         <ul className="partners-row" tabIndex={0} aria-label="Supporting organisations">
           {partners.map(partner => {

@@ -28,27 +28,29 @@ export default async function Home() {
   const spaceOpen = services.some(service => service.service_name === RegistrationServiceType.MY_SPACE && service.isActive);
   const brochure = content.brochureButton;
   const date = config?.subtitle || `${HOMEPAGE.expoStartDate.date}–${HOMEPAGE.expoEndDate.date} ${HOMEPAGE.expoEndDate.displayMonth} ${HOMEPAGE.expoEndDate.year}`;
-  const venue = config?.venue || "Hall No. 12A, Bharat Mandapam, New Delhi";
+  const venue = config?.venue || "Hall No. 12A, Bharat Mandapam, New Delhi , India";
   const registrationActions = [
     { label: "Register as a Visitor", href: config?.visitorButtonLink || "/registrationform/visitor", icon: "people", variant: "visitor" },
     { label: "Register as a Delegate", href: config?.delegateButtonLink || "/registrationform/delegateregistration", icon: "broadcast", variant: "delegate" },
     { label: "Book Exhibition Space", href: config?.primaryButtonLink || `${expo}/exibition/participation_fee`, icon: "building", variant: "exhibitor" },
   ];
   const paths = [
-    { number: "01", tag: "VISIT THE EXHIBITION", title: "See the technology. Ask the people who build it.", text: "Explore equipment and services across the broadcast workflow, from cameras and audio production to transmission, storage, and streaming. Meet technology teams face to face, discuss your requirements, and compare approaches for your next project.", href: visitorOpen ? config?.visitorButtonLink || "/registrationform/visitor" : `${expo}/exibition/products_on_display`, action: visitorOpen ? config?.visitorButtonText || "Register as a visitor" : "Explore products on display", status: visitorOpen ? "Visitor registration open" : "Explore visitor information" },
-    { number: "02", tag: "ATTEND THE CONFERENCE", title: "Make time for a deeper discussion.", text: "Join broadcast engineers, industry specialists, and researchers to examine the issues affecting radio, television, and digital media. Read the conference theme and programme to find the discussions most relevant to your work.", href: delegateOpen ? config?.delegateButtonLink || "/registrationform/delegateregistration" : `${expo}/conference/conference_theme`, action: delegateOpen ? config?.delegateButtonText || "Register as a delegate" : "Explore the conference", status: delegateOpen ? "Delegate registration open" : "Discover the conference theme" },
-    { number: "03", tag: "EXHIBIT WITH BES", title: "Bring your work to the industry.", text: "Introduce your products and services to professionals working in broadcast and media. Review participation fees, the exhibition floor plan, and sponsorship options, then speak with the BES team about the right space for your organisation.", href: config?.primaryButtonLink || `${expo}/exibition/participation_fee`, action: config?.primaryButtonText || (spaceOpen ? "Book your exhibition space" : "View exhibitor information"), status: spaceOpen ? "Space booking open" : "Plan your participation" },
+    { number: "01", tag: "VISIT THE EXHIBITION", title: "See the technology. Ask the people who build it.", text: "Explore equipment and services across the broadcast workflow, from cameras and audio production to transmission, storage, and streaming. Meet technology teams face to face, discuss your requirements, and compare approaches for your next project.", href: visitorOpen ? config?.visitorButtonLink || "/registrationform/visitor" : `${expo}/exibition/products_on_display`, action: visitorOpen ? config?.visitorButtonText || "Register as a visitor" : "Explore products on display", status: visitorOpen ? "Visitor registration open" : "" },
+    { number: "02", tag: "ATTEND THE CONFERENCE", title: "Make time for a deeper discussion.", text: "Join broadcast engineers, industry specialists, and researchers to examine the issues affecting radio, television, and digital media. Read the conference theme and programme to find the discussions most relevant to your work.", href: delegateOpen ? config?.delegateButtonLink || "/registrationform/delegateregistration" : `${expo}/conference/conference_theme`, action: delegateOpen ? config?.delegateButtonText || "Register as a delegate" : "Explore the conference", status: delegateOpen ? "Delegate registration open" : "" },
+    { number: "03", tag: "EXHIBIT WITH BES", title: "Bring your work to the industry.", text: "Introduce your products and services to professionals working in broadcast and media. Review participation fees, the exhibition floor plan, and sponsorship options, then speak with the BES team about the right space for your organisation.", href: config?.primaryButtonLink || `${expo}/exibition/participation_fee`, action: config?.primaryButtonText || (spaceOpen ? "Book your exhibition space" : "View exhibitor information"), status: spaceOpen ? "Space booking open" : "" },
   ];
 
   return <div className="homepage">
     <section className="home-hero" aria-labelledby="home-title"><div className="hero-grid">
       <div className="hero-copy">
-        <div className="eyebrow"><span className="eyebrow-rule" />BROADCAST ENGINEERING SOCIETY (INDIA) · EST. 1987 <span className="hero-edition-label">{HOMEPAGE.eventCount} edition</span></div>
-        <h1 id="home-title">Shaping the Future of Broadcast<br />&  <em>Media Technology..</em></h1>
+        <div className="eyebrow"><span className="eyebrow-rule" /><span className="hero-edition-label">{HOMEPAGE.eventCount} edition</span></div>
         {/* <p className="hero-event-title">{config?.title || `${HOMEPAGE.eventCount} International Conference & Exhibition on Broadcast & Media Technology`}</p> */}
         <p className="hero-description">Bringing together the people, technologies and ideas transforming the world of broadcasting. Through international exhibitions, conferences and industry initiatives, BES India drives knowledge exchange, innovation and collaboration across the global media ecosystem.</p>
         <div className="hero-actions"><Link href={resourceUrl(visitorOpen ? config?.visitorButtonLink || "/registrationform/visitor" : `${expo}/exibition/history`)} className="button button-primary">{visitorOpen ? "Register your visit" : "Explore BES EXPO"}<Icon name="arrow" /></Link><Link href={resourceUrl(config?.primaryButtonLink || `${expo}/exibition/participation_fee`)} className="button button-outline">Discover BES India<Icon name="diagonal" width={18} height={18} /></Link></div>
-        <dl className="hero-event-meta"><div><dt><Icon name="calendar" />Event dates</dt><dd>{date}</dd></div><div><dt><Icon name="pin" />New Delhi, India</dt><dd>{venue}</dd></div></dl>
+        <dl className="hero-event-meta">
+          <div><dt><Icon name="calendar" />Event Dates</dt><dd>{date}</dd></div>
+          <div><dt><Icon name="pin" />Location</dt><dd>{venue.replace(/Bharat Mandapam/gi, name => name.replace(" ", "\u00a0"))}</dd></div>
+        </dl>
       </div><HeroVisual slides={slides} />
     </div></section>
 
@@ -56,7 +58,7 @@ export default async function Home() {
 
     {content.announcementsEnabled && content.announcementItems.length > 0 && <SocietyNews items={content.announcementItems} />}
 
-    <section className="registration-section" id="registration" aria-labelledby="registration-title">
+    <section className="registration-section" id="registration" tabIndex={-1} aria-labelledby="registration-title">
       <div className="site-container">
         <div className="registration-heading">
           <div><div className="eyebrow">Your next step</div><h2 id="registration-title">Register for BES EXPO.</h2></div>
@@ -73,7 +75,7 @@ export default async function Home() {
     </section>
 
     <section className="home-section experience-section" id="participate" aria-labelledby="participate-title"><div className="site-container">
-      <div className="section-heading"><div><div className="eyebrow">Exhibition & conference</div><h2 id="participate-title">Find your place at BES EXPO.</h2></div><p>Come with a project, a question, or an idea to share. Choose how you would like to take part and find the information you need before making plans.</p></div>
+      <div className="section-heading"><div><div className="eyebrow">Exhibition & conference</div><h2 id="participate-title">Find your place at BES EXPO.</h2></div></div>
       <div className="experience-grid">{paths.map(path => <article className="experience-card" key={path.number}><span className="experience-number" aria-hidden="true">{path.number}</span><div className="experience-copy"><div className="eyebrow">{path.tag}</div><h3>{path.title}</h3><p>{path.text}</p></div><div className="experience-action"><span className="service-status">{path.status}</span><Link href={resourceUrl(path.href)} className="card-link">{path.action}<Icon name="arrow" /></Link></div></article>)}</div>
       {config?.theme && <div className="theme-callout"><span className="eyebrow">Conference theme · {HOMEPAGE.expoStartDate.year}</span><p>{config.theme.replace(/^Theme:\s*/i, "")}</p></div>}
     </div></section>

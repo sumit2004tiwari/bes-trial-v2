@@ -14,7 +14,7 @@ export default function Content() {
           the necessity of projecting the interests of Broadcast Engineers at
           national and international level. They decided to promote the
           advancement, dissemination of knowledge and practice in the field of
-          Broadcasting and related sciences. Their determination finally came as
+          Broadcasting and related sciences. <br />Their determination finally came as
           the establishment of Broadcast Engineering Society in 1987 when it got
           registered with the Registrar of Societies, Delhi Administration on
           8th April 1987. To achieve its goals with the specific aims &

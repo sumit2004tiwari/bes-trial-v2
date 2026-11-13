@@ -1,0 +1,23 @@
+/* Shared reading measure for society, EXPO, archive, and homepage copy. */
+:root { --reading-width: 44rem; }
+
+:is(.interior-page .reading-content, .interior-page .section-content) :is(p, ul, ol):not(:where(table *, form *, nav *, [role="alert"] *, [role="status"] *, .MuiFormControl-root *, .MuiTablePagination-root *, .membership-summary *, .contact-office *, .council-grid *)),
+.interior-page .archive-content :is(p, ul, ol) {
+  inline-size: 100%;
+  max-inline-size: min(100%, var(--reading-width));
+}
+
+:is(.interior-page .reading-content, .interior-page .section-content) :is(p, li):not(:where(table *, form *, nav *, [role="alert"] *, [role="status"] *, .MuiFormControl-root *, .MuiTablePagination-root *, .membership-summary *, .contact-office *, .council-grid *)),
+.interior-page .archive-content :is(p, li),
+.homepage :is(.hero-copy, .film-introduction, .experience-copy, .society-copy, .contact-heading, .section-heading) > p,
+.homepage .resources-grid > div:first-child > p {
+  text-align: justify;
+  text-align-last: start;
+  hyphens: auto;
+  overflow-wrap: break-word;
+}
+
+.homepage :is(.hero-copy, .film-introduction, .experience-copy, .society-copy, .contact-heading, .section-heading) > p,
+.homepage .resources-grid > div:first-child > p {
+  max-inline-size: min(100%, var(--reading-width));
+}

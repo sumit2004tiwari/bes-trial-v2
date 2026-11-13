@@ -1,5 +1,5 @@
-.content_container { color: #536477; }
-.content_container p { margin: 1em 0; line-height: 1.85; text-align: left; }
+.content_container { composes: reading-content from global; color: #536477; }
+.content_container p { margin: 1em 0; line-height: 1.85; }
 .content_container h3 { font-size: 23px; font-weight: 600; margin: 30px 0 12px; line-height: 1.4; }
 .content_container h3:first-child { margin-top: 0; }
 .content_container h2 { color: #142b45; }

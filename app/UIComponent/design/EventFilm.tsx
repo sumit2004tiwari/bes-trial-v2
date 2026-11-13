@@ -30,7 +30,7 @@ export default function EventFilm({ video }: { video: HomePageVideo }) {
               {failed && <div className="film-error" role="status"><p>The film could not be loaded. Please try again.</p><button type="button" className="button button-gold" onClick={() => { setFailed(false); player.current?.load(); }}>Retry video</button><a href={video.url} className="text-link-light">Open video directly<Icon name="diagonal" /></a></div>}
             </> : <Image src={video.poster} alt={`${video.title} — film cover`} fill sizes="(max-width: 560px) 90vw, 520px" unoptimized />}
           </div>
-          <figcaption id="film-caption"><span>{video.url ? "BES EXPO · Event film" : "BES EXPO · From our event archive"}</span><span>{video.url ? "Press play to watch" : "Exhibition, conference & community"}</span></figcaption>
+          <figcaption id="film-caption"></figcaption>
         </figure>
       </div>
     </section>

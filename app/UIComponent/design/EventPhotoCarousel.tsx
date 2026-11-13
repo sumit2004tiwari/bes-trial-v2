@@ -7,12 +7,12 @@ import { Icon } from "./Icons";
 import "./event-photo-carousel.css";
 
 const photos = [
-  { file: "WhatsApp Image 2026-01-31 at 16.38.35 (1).jpeg", title: "On the exhibition floor", description: "A closer look at broadcast technology, with the people behind it.", alt: "BES EXPO 2026 visitors and exhibitors gathered around a technology demonstration" },
-  { file: "WhatsApp Image 2026-01-31 at 16.38.35 (3).jpeg", title: "Technology in conversation", description: "Questions, demonstrations, and ideas exchanged face to face.", alt: "Delegates discussing equipment at an exhibition stand at BES EXPO 2026" },
-  { file: "WhatsApp Image 2026-01-31 at 16.38.36 (1).jpeg", title: "Meet the industry", description: "Broadcast professionals connecting across the exhibition stands.", alt: "Broadcast professionals meeting beside a BECIL exhibition stand at BES EXPO 2026" },
-  { file: "WhatsApp Image 2026-01-31 at 16.37.19 (2).jpeg", title: "Celebrating the community", description: "Recognising the people who contribute to the world of broadcasting.", alt: "A guest being honoured on stage at BES EXPO 2026" },
-  { file: "WhatsApp Image 2026-01-31 at 16.37.19.jpeg", title: "Together on stage", description: "A shared occasion for the broadcast engineering community.", alt: "Guests and BES representatives together on the BES EXPO 2026 stage" },
-  { file: "WhatsApp Image 2026-01-31 at 16.38.27.jpeg", title: "Connections that continue", description: "Colleagues, new introductions, and conversations beyond the programme.", alt: "BES EXPO 2026 attendees greeting each other on the exhibition floor" },
+  { file: "WhatsApp Image 2026-01-31 at 16.38.35 (1).jpeg", title: "On the exhibition floor", alt: "BES EXPO 2026 visitors and exhibitors gathered around a technology demonstration" },
+  { file: "WhatsApp Image 2026-01-31 at 16.38.35 (3).jpeg", title: "Technology in conversation",alt: "Delegates discussing equipment at an exhibition stand at BES EXPO 2026" },
+  { file: "WhatsApp Image 2026-01-31 at 16.38.36 (1).jpeg", title: "Meet the industry", alt: "Broadcast professionals meeting beside a BECIL exhibition stand at BES EXPO 2026" },
+  { file: "WhatsApp Image 2026-01-31 at 16.37.19 (2).jpeg", title: "Celebrating the community", alt: "A guest being honoured on stage at BES EXPO 2026" },
+  { file: "WhatsApp Image 2026-01-31 at 16.37.19.jpeg", title: "Together on stage",  alt: "Guests and BES representatives together on the BES EXPO 2026 stage" },
+  { file: "WhatsApp Image 2026-01-31 at 16.38.27.jpeg", title: "Connections that continue", alt: "BES EXPO 2026 attendees greeting each other on the exhibition floor" },
 ];
 
 export default function EventPhotoCarousel() {
@@ -64,9 +64,8 @@ export default function EventPhotoCarousel() {
       }
     }}>
     <div className="site-container event-memories-heading">
-      <div className="eyebrow">BES EXPO 2026 · The last edition</div>
-      <h2 id="memories-title">An industry, in good company.</h2>
-      <p>Revisit the people, discoveries, and conversations from our last event.</p>
+      <h2 id="memories-title">BES EXPO-2026 Conference Sessions.</h2>
+      <p>Revisit the event, people, and conversations from our last event.</p>
     </div>
 
     <div id={stageId} className="event-memories-stage"
@@ -110,10 +109,10 @@ export default function EventPhotoCarousel() {
     </div>
 
     <div className="site-container event-memories-bottom">
-      <div className="event-memory-description" aria-live={rotating ? "off" : "polite"} aria-atomic="true">
+      {/* <div className="event-memory-description" aria-live={rotating ? "off" : "polite"} aria-atomic="true">
         <p>{photos[active].description}</p>
         <span className="sr-only">Photo {active + 1} of {photos.length}: {photos[active].title}.</span>
-      </div>
+      </div> */}
       <div className="event-memories-controls">
         <button type="button" className="event-memory-arrow" aria-label="Previous memory" aria-controls={stageId} onClick={() => move(-1)}><Icon name="arrow" style={{ transform: "rotate(180deg)" }} /></button>
         <div className="event-memory-dots" aria-label="Choose an event memory">{photos.map((photo, index) =>
@@ -121,13 +120,13 @@ export default function EventPhotoCarousel() {
             aria-current={index === active ? "true" : undefined} onClick={() => setActive(index)}><span /></button>
         )}</div>
         <button type="button" className="event-memory-arrow" aria-label="Next memory" aria-controls={stageId} onClick={() => move(1)}><Icon name="arrow" /></button>
-        <button type="button" className="event-memory-play" aria-label={playing && !reducedMotion ? "Pause photo rotation" : "Play photo rotation"}
+        {/* <button type="button" className="event-memory-play" aria-label={playing && !reducedMotion ? "Pause photo rotation" : "Play photo rotation"}
           aria-controls={stageId} disabled={reducedMotion} title={reducedMotion ? "Automatic rotation is off for reduced motion" : undefined}
           onClick={() => setPlaying(value => !value)}>
           {playing && !reducedMotion ? <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="M5 4h3v12H5zM12 4h3v12h-3z" /></svg> : <svg viewBox="0 0 20 20" width="18" height="18" fill="currentColor" aria-hidden="true"><path d="m6 3 11 7-11 7z" /></svg>}
-        </button>
+        </button> */}
       </div>
-      <Link href="/galleries/pictures?selectedValue=2026" className="text-link event-memory-gallery">Explore the 2026 gallery<Icon name="arrow" /></Link>
+      {/* <Link href="/galleries/pictures?selectedValue=2026" className="text-link event-memory-gallery">Explore the 2026 gallery<Icon name="arrow" /></Link> */}
     </div>
   </section>;
 }

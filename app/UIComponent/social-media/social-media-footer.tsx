@@ -9,14 +9,14 @@ import YouTubeIcon from '@mui/icons-material/YouTube';
 export default function SocialMediaFooter() {
   return (
 
-    <div className="container mx-auto flex justify-center space-x-8 mt-4 mb-4 items-center">
+    <div className="footer-socials">
       <Link
         href="https://x.com/besindiaexpo"
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Twitter"
       >
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.5L5.3 22H2.1l7.3-8.4L1.6 2H8l4.5 6.8L18.9 2ZM17.8 20h1.8L6.9 4H5.1l12.7 16Z" /></svg>
+        <svg width="28" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 2H22l-6.8 7.8L23.2 22h-6.3l-5-7.5L5.3 22H2.1l7.3-8.4L1.6 2H8l4.5 6.8L18.9 2ZM17.8 20h1.8L6.9 4H5.1l12.7 16Z" /></svg>
 
       </Link>
       <Link

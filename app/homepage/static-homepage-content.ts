@@ -21,8 +21,7 @@ export function getStaticHomepageContent(): HomePageContent {
     notificationConfig: {
       title: `BES EXPO-2027: ${HOMEPAGE.eventCount} International Conference & Exhibition on Broadcast & Media Technology`,
       subtitle,
-      venue: "Hall No. 12A, Bharat Mandapam, New Delhi", // Hall No. 12A Pragati Maidan, New Delhi
-      theme: "Theme: Reimagining Media: Intelligent, Innovative & Indigenous — Shaping Media for a Connected World",
+      venue: "Hall No. 12A, Bharat Mandapam, New Delhi , India", // Hall No. 12A Pragati Maidan, New Delhi
       primaryButtonLink:
         "/event_conference/bes_expo/exibition/participation_fee",
       countdownStartDateTime,

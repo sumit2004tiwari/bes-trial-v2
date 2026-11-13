@@ -29,7 +29,8 @@ main:focus { outline: none; }
 .inner_page { height: calc(100dvh - var(--header_height)); max-height: none; background: #f7f8fa; scrollbar-color: #b8c2cc #f7f8fa; }
 .inner_page > .flex:last-child { min-height: 100%; height: auto; }
 .body_page { flex: 1 0 auto; }
-.site-header { height: var(--header_height); background: #11112f; color: white; position: relative; z-index: 100; border-bottom: 1px solid #ffffff12; }
+.site-header { height: var(--header_height); background: #0F1130; color: white; position: relative; z-index: 100; border-bottom: 1px solid #ffffff12; }
+.header-inner.site-container { width: min(1600px, calc(100% - 48px)); }
 .header-inner { height: 100%; display: flex; gap: 28px; align-items: center; justify-content: space-between; }
 .brand-logo { flex: 0 0 225px; display: block; }
 .brand-logo img { width: 225px; height: auto; }
@@ -64,20 +65,29 @@ main:focus { outline: none; }
 .button-gold { background: var(--champagne); color: var(--ink-deep); }
 .button-gold:hover { background: #f1d8ad; }
 .icon-tile { display: grid; place-items: center; width: 52px; height: 52px; background: var(--ivory); color: #86652f; border-radius: 4px; flex-shrink: 0; }
-.site-footer { background: #11112f; color: #bbc2cf; padding-block: 55px 24px; }
+.site-footer { background: #0F1130; color: #bbc2cf; padding-block: 55px 24px; }
 .footer-top { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 45px; }
-.footer-brand img { width: 225px; height: auto; }
-.footer-brand p { font-size: 16px; line-height: 1.8; color: #b2bfd0; margin: 20px 0 12px; max-width: 320px; }
+.footer-brand { min-width: 0; }
+.footer-brand img { width: 205px; height: auto; }
+.footer-brand p { font-size: 16px; line-height: 1.8; color: #b2bfd0; margin: 20px 0 1px; max-width: 320px; }
 .footer-since { font-size: 12px; color: #a2afc2; letter-spacing: .02em; }
-.footer-brand .container { justify-content: flex-start; gap: 15px; margin: 23px 0 0; }
-.footer-brand .container > a { margin: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #ffffff25; border-radius: 50%; }
-.footer-brand .container > a:hover { background: #ffffff15; }
-.footer-brand .container > a > svg { width: 16px; color: #bbc2cf; }
-.footer-brand .container > a > img { width: 13px; }
+.footer-socials { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-start; gap: 10px; width: 100%; max-width: 320px; margin: 0; }
+.footer-socials > a { flex: 0 0 44px; margin: 0; display: flex; align-items: center; justify-content: center; width: 44px; height: 44px; border: 1px solid #ffffff25; border-radius: 50%; }
+.footer-socials > a:hover { background: #ffffff15; }
+.footer-socials > a > svg { width: 16px; color: #bbc2cf; }
+.footer-socials > a > img { width: 13px; }
 .footer-column { display: flex; flex-direction: column; align-items: flex-start; }
 .footer-column h2 { font-weight: 500; color: white; font-size: 16px; margin: 10px 0 16px; }
 .footer-column > a { font-size: 15px; line-height: 1.7; padding-block: 9px; color: #bbc5d4; }
 .footer-column > a:hover { color: #e5c38a; }
+.footer-contacts { display: grid; grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)); align-items: start; gap: 32px 40px; margin-top: 36px; padding-top: 28px; border-top: 1px solid #ffffff18; }
+.footer-contact { min-width: 0; }
+.footer-contact h2 { margin: 0 0 12px; color: var(--champagne); font-size: 16px; font-weight: 600; }
+.footer-contact address { font-style: normal; font-size: 15px; line-height: 1.8; color: #bbc5d4; overflow-wrap: anywhere; }
+.footer-contact address > strong, .footer-contact address > span { display: block; }
+.footer-contact address > strong { color: #edf3f7; font-weight: 600; }
+.footer-contact a { color: inherit; text-decoration: underline; text-underline-offset: 4px; }
+.footer-contact a:hover { color: var(--champagne); }
 .footer-bottom { border-top: 1px solid #ffffff18; margin-top: 40px; padding-top: 23px; display: flex; justify-content: space-between; gap: 20px; font-size: 12px; color: #94a1b6; }
 .page-intro { background: var(--ivory); padding: 28px 0 38px; border-bottom: 1px solid #e8e5dc; }
 .breadcrumbs { display: flex; flex-wrap: wrap; gap: 10px; font-size: 13px; color: var(--muted); margin-bottom: 24px; line-height: 1.8; }
@@ -169,7 +179,6 @@ main:focus { outline: none; }
 .archive-content table { table-layout: fixed; max-width: 100%; }
 .archive-content td { padding: 12px; vertical-align: top; }
 .archive-content h3 { font-size: 19px; font-weight: 600; margin: 15px 0; }
-.archive-content p { text-align: left !important; }
 .archive-photo { max-width: 100%; height: auto; border-radius: 8px; }
 .archive-photo-unavailable { min-height: 100px; display: flex; align-items: center; justify-content: center; text-align: center; border-radius: 8px; border: 1px solid var(--line); background: #f4f6f8; color: var(--muted); font-size: 13px; padding: 16px; }
 .archive-resource-unavailable { color: var(--muted); }
@@ -198,7 +207,12 @@ main:focus { outline: none; }
   .footer-top { grid-template-columns: 1.3fr 1fr 1fr; }
   .footer-column:last-child { grid-column: 2; }
 }
+@media (max-width: 1023px) {
+  .footer-contacts { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .footer-contact-social { grid-column: 1 / -1; justify-self: end; width: 260px; max-width: 100%; }
+}
 @media (max-width: 767px) {
+  .header-inner.site-container { width: calc(100% - 40px); }
   .council-card { padding: 14px 12px; }
   .council-portrait { height: 135px; }
   .council-card > h3 { font-size: 16px; }
@@ -217,6 +231,8 @@ main:focus { outline: none; }
   .footer-brand p br { display: none; }
   .footer-column:last-child { grid-column: auto; }
   .footer-column h2 { margin-top: 0; }
+  .footer-contacts { grid-template-columns: minmax(0, 1fr); gap: 24px; margin-top: 30px; padding-top: 24px; }
+  .footer-contact-social { grid-column: auto; justify-self: start; width: 100%; }
   .footer-bottom { flex-direction: column; gap: 10px; line-height: 1.8; margin-top: 30px; }
   .page-intro { padding-block: 20px 28px; }
   .breadcrumbs { font-size: 12px; gap: 7px; margin-bottom: 20px; }

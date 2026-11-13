@@ -3,6 +3,7 @@ import "./globals.css";
 import "./design-system.css";
 import "./homepage/editorial.css";
 import "./UIComponent/design/event-countdown.css";
+import "./reading-content.css";
 
 import Navbar from "./UIComponent/Navbar/Navbar";
 import Header1 from "./UIComponent/Navbar/Header1";
@@ -48,7 +49,7 @@ export const metadata: Metadata = {
   keywords: [
     // English Keywords
     "BES Expo",
-    "BES Expo 2027",
+    "BES Expo -- 2027",
     "besindia",
     "bes india",
     "Broadcast Engineering Society Expo",
@@ -168,7 +169,7 @@ export default async function RootLayout({
             <PullToRefresh className="overflow-auto inner_page scroll-smooth">
               <div className="body_page">
                 <NetworkStatus />
-                <EventCountdown from={countdownStart} registrationHref={homepageContent?.notificationConfig?.visitorButtonLink || "/registrationform/visitor"} />
+                <EventCountdown from={countdownStart} />
                 <PageFrame>{children}</PageFrame>
               </div>
               {!!brochureButton?.label && (

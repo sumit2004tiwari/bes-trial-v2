@@ -1,5 +1,5 @@
 "use client";
-import { useId, useRef, useState } from "react";
+import { useEffect, useId, useRef, useState } from "react";
 import Image from "next/image";
 import type { HomeCarouselSlide } from "@/app/homepage/types";
 import { Icon } from "./Icons";
@@ -10,19 +10,54 @@ export default function HeroVisual({ slides }: { slides: HomeCarouselSlide[] }) 
   const images = slides.length ? slides : fallback;
   const imageId = useId();
   const [index, setIndex] = useState(0);
+  const [reducedMotion, setReducedMotion] = useState(true);
+  const [hovered, setHovered] = useState(false);
+  const [focused, setFocused] = useState(false);
+  const [visible, setVisible] = useState(false);
+  const [pageVisible, setPageVisible] = useState(true);
+  const root = useRef<HTMLElement>(null);
   const gesture = useRef<{ x: number; y: number } | null>(null);
   const suppressClickUntil = useRef(0);
   const activeIndex = index % images.length;
   const slide = images[activeIndex];
   const hasNavigation = images.length > 1;
+  const rotating = hasNavigation && !reducedMotion && !hovered && !focused && visible && pageVisible;
+
+  useEffect(() => {
+    const preference = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const updateMotion = () => setReducedMotion(preference.matches);
+    const updateVisibility = () => setPageVisible(!document.hidden);
+    updateMotion();
+    updateVisibility();
+    preference.addEventListener("change", updateMotion);
+    document.addEventListener("visibilitychange", updateVisibility);
+    const observer = new IntersectionObserver(([entry]) => setVisible(entry.isIntersecting), { threshold: 0.25 });
+    if (root.current) observer.observe(root.current);
+    return () => {
+      preference.removeEventListener("change", updateMotion);
+      document.removeEventListener("visibilitychange", updateVisibility);
+      observer.disconnect();
+    };
+  }, []);
+
+  useEffect(() => {
+    if (!rotating) return;
+    const timer = window.setInterval(() => setIndex(current => (current + 1) % images.length), 4500);
+    return () => window.clearInterval(timer);
+  }, [rotating, images.length, index]);
   const move = (direction: number) => setIndex(current => (current + direction + images.length) % images.length);
   const picture = <Image key={slide.imageUrl} src={slide.imageUrl} alt={slide.altText || "BES EXPO broadcast and media technology event"} fill sizes="(max-width: 899px) 100vw, calc((100vw - 16px) / 2)" priority className="hero-photo" draggable={false} />;
 
   return <figure
+    ref={root}
     className="hero-visual"
     aria-label="BES EXPO event photographs"
     aria-roledescription={hasNavigation ? "carousel" : undefined}
     tabIndex={hasNavigation ? 0 : undefined}
+    onPointerEnter={event => { if (event.pointerType === "mouse") setHovered(true); }}
+    onPointerLeave={() => setHovered(false)}
+    onFocusCapture={() => setFocused(true)}
+    onBlurCapture={event => { if (!event.currentTarget.contains(event.relatedTarget as Node)) setFocused(false); }}
     onKeyDown={event => {
       if (!hasNavigation || event.target !== event.currentTarget) return;
       if (event.key === "ArrowLeft" || event.key === "ArrowRight") {
@@ -54,7 +89,7 @@ export default function HeroVisual({ slides }: { slides: HomeCarouselSlide[] }) 
   >
     <div className="hero-image-wrap" id={imageId}>
       {slide.clickUrl ? <a href={resourceUrl(slide.clickUrl)} target={slide.target || "_self"} rel={slide.target === "_blank" ? "noopener noreferrer" : undefined} className="hero-image-link">{picture}</a> : picture}
-      <span className="hero-image-tag"><span aria-hidden="true" />Inside BES EXPO</span>
+
       {hasNavigation && <div className="hero-slide-controls">
         <button type="button" aria-label="Previous event photo" aria-controls={imageId} onClick={() => move(-1)}><Icon name="arrow" style={{ transform: "rotate(180deg)" }} /></button>
         <button type="button" aria-label="Next event photo" aria-controls={imageId} onClick={() => move(1)}><Icon name="arrow" /></button>
@@ -62,10 +97,6 @@ export default function HeroVisual({ slides }: { slides: HomeCarouselSlide[] }) 
     </div>
     <figcaption className="hero-photo-caption">
       <div className="hero-caption-copy"><span>THE BES EXPO EXPERIENCE</span><strong>Ideas. Connections.<br />A shared future.</strong></div>
-      {hasNavigation && <div className="hero-slide-pagination">
-        <span className="hero-slide-count" aria-live="polite" aria-atomic="true"><span className="sr-only">Photo </span>{String(activeIndex + 1).padStart(2, "0")}<span aria-hidden="true"> / </span><span className="sr-only"> of </span>{String(images.length).padStart(2, "0")}</span>
-        <div className="hero-slide-dots" aria-label="Choose event photo">{images.map((image, position) => <button key={`${image.imageUrl}-${position}`} type="button" aria-label={`Show event photo ${position + 1}`} aria-current={position === activeIndex ? "true" : undefined} aria-controls={imageId} onClick={() => setIndex(position)} />)}</div>
-      </div>}
     </figcaption>
   </figure>;
 }

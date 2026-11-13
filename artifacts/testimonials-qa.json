@@ -1,0 +1,451 @@
+{
+  "layouts": [
+    {
+      "width": 1440,
+      "documentWidth": 1440,
+      "scrollWidth": 1280,
+      "gridWidth": 1280,
+      "cards": [
+        {
+          "width": 240,
+          "height": 426.65625
+        },
+        {
+          "width": 240,
+          "height": 426.65625
+        },
+        {
+          "width": 240,
+          "height": 426.65625
+        },
+        {
+          "width": 240,
+          "height": 426.65625
+        },
+        {
+          "width": 240,
+          "height": 426.65625
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 1200,
+      "documentWidth": 1200,
+      "scrollWidth": 1104,
+      "gridWidth": 1104,
+      "cards": [
+        {
+          "width": 204.796875,
+          "height": 364.078125
+        },
+        {
+          "width": 204.796875,
+          "height": 364.078125
+        },
+        {
+          "width": 204.796875,
+          "height": 364.078125
+        },
+        {
+          "width": 204.796875,
+          "height": 364.078125
+        },
+        {
+          "width": 204.8125,
+          "height": 364.109375
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 1024,
+      "documentWidth": 1024,
+      "scrollWidth": 960,
+      "gridWidth": 960,
+      "cards": [
+        {
+          "width": 306.65625,
+          "height": 545.15625
+        },
+        {
+          "width": 306.671875,
+          "height": 545.1875
+        },
+        {
+          "width": 306.65625,
+          "height": 545.15625
+        },
+        {
+          "width": 306.65625,
+          "height": 545.15625
+        },
+        {
+          "width": 306.671875,
+          "height": 545.1875
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "scrollWidth": 704,
+      "gridWidth": 704,
+      "cards": [
+        {
+          "width": 221.328125,
+          "height": 393.46875
+        },
+        {
+          "width": 221.328125,
+          "height": 393.46875
+        },
+        {
+          "width": 221.328125,
+          "height": 393.46875
+        },
+        {
+          "width": 221.328125,
+          "height": 393.46875
+        },
+        {
+          "width": 221.328125,
+          "height": 393.46875
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 601,
+      "documentWidth": 601,
+      "scrollWidth": 561,
+      "gridWidth": 561,
+      "cards": [
+        {
+          "width": 270.5,
+          "height": 480.875
+        },
+        {
+          "width": 270.5,
+          "height": 480.875
+        },
+        {
+          "width": 270.5,
+          "height": 480.875
+        },
+        {
+          "width": 270.5,
+          "height": 480.875
+        },
+        {
+          "width": 270.5,
+          "height": 480.875
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 600,
+      "documentWidth": 600,
+      "scrollWidth": 1504,
+      "gridWidth": 600,
+      "cards": [
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "scrollWidth": 1504,
+      "gridWidth": 390,
+      "cards": [
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        },
+        {
+          "width": 280,
+          "height": 497.765625
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    },
+    {
+      "width": 320,
+      "documentWidth": 320,
+      "scrollWidth": 1352,
+      "gridWidth": 320,
+      "cards": [
+        {
+          "width": 249.59375,
+          "height": 443.71875
+        },
+        {
+          "width": 249.59375,
+          "height": 443.71875
+        },
+        {
+          "width": 249.59375,
+          "height": 443.71875
+        },
+        {
+          "width": 249.59375,
+          "height": 443.71875
+        },
+        {
+          "width": 249.59375,
+          "height": 443.71875
+        }
+      ],
+      "thumbnails": [
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        },
+        {
+          "loaded": true,
+          "visible": true
+        }
+      ]
+    }
+  ],
+  "urls": [
+    "https://youtube.com/shorts/BDtraVu50bw?si=wm6_LEj6HZxp1iFq",
+    "https://youtube.com/shorts/56OQ7arLGU8?si=vCV9Th1Qq0WqzbY2",
+    "https://youtube.com/shorts/bAULMpEPAPg?si=GnppGrKR8T5l25Tg",
+    "https://youtube.com/shorts/HP7kd92ldZI?si=3-mNtewHB_dkc6FV",
+    "https://youtube.com/shorts/20YVPPAjVK0?si=_ioSGty2yFpyB01G"
+  ],
+  "players": [
+    "https://www.youtube-nocookie.com/embed/BDtraVu50bw?autoplay=1&playsinline=1&rel=0",
+    "https://www.youtube-nocookie.com/embed/56OQ7arLGU8?autoplay=1&playsinline=1&rel=0",
+    "https://www.youtube-nocookie.com/embed/bAULMpEPAPg?autoplay=1&playsinline=1&rel=0",
+    "https://www.youtube-nocookie.com/embed/HP7kd92ldZI?autoplay=1&playsinline=1&rel=0",
+    "https://www.youtube-nocookie.com/embed/20YVPPAjVK0?autoplay=1&playsinline=1&rel=0"
+  ],
+  "playbackChecks": [
+    {
+      "title": "Mr S Krishnan on BES Expo’s Technology Focus | BES Expo 2027: 11–13 February, New Delhi - YouTube",
+      "videoReadyState": 4,
+      "text": "@besindiaexpo\nMr S Krishnan on BES Expo’s Technology Focus | BES Expo 2027: 11–13 February, New Delhi\nLike\nShare"
+    },
+    {
+      "title": "Mr Rajat Nigam on Broadcasting & AI | BES Expo 2027: 11–13 February, New Delhi - YouTube",
+      "videoReadyState": 4,
+      "text": "@besindiaexpo\nMr Rajat Nigam on Broadcasting & AI | BES Expo 2027: 11–13 February, New Delhi\n2\nShare"
+    },
+    {
+      "title": "From Global Standards to India-First Innovation:AI, D2M & the Future of Broadcasting | BES Expo 2026 - YouTube",
+      "videoReadyState": 4,
+      "text": "Experience is always great you know I\nwas there last time as well this time"
+    },
+    {
+      "title": "Delegate Perspective: Rethinking D2M, Broadcast & Last-Mile AI Access | BES Expo 2026 - YouTube",
+      "videoReadyState": 4,
+      "text": "As usual panel discussions are very\nenjoyable. Luckily as a moderator you\ndon't have"
+    },
+    {
+      "title": "Delegate Voices | Interoperability, Automation & India’s Tech Future | BES Expo 2026 - YouTube",
+      "videoReadyState": 4,
+      "text": "Uh the session was very interesting and\nI must say that you know there is a"
+    }
+  ],
+  "playback": {
+    "text": "requirement to do more of these sessions\nso that we are able to bring people",
+    "videoReadyState": 4
+  },
+  "violations": [],
+  "errors": []
+}
