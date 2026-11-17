@@ -43,8 +43,9 @@ export default async function Home() {
   return <div className="homepage">
     <section className="home-hero" aria-labelledby="home-title"><div className="hero-grid">
       <div className="hero-copy">
-        <div className="eyebrow"><span className="eyebrow-rule" /><span className="hero-edition-label">{HOMEPAGE.eventCount} edition</span></div>
-        {/* <p className="hero-event-title">{config?.title || `${HOMEPAGE.eventCount} International Conference & Exhibition on Broadcast & Media Technology`}</p> */}
+        <div className="eyebrow"><span className="eyebrow-rule" />Conference theme · {HOMEPAGE.expoStartDate.year} <span className="hero-edition-label">{HOMEPAGE.eventCount} edition</span></div>
+        <h1 id="home-title">Reimagining Media: Intelligent, Innovative &amp; Indigenous “Shaping Media for a Connected World”<br /></h1>
+        <p className="hero-event-title">{config?.title || `${HOMEPAGE.eventCount} International Conference & Exhibition on Broadcast & Media Technology`}</p>
         <p className="hero-description">Bringing together the people, technologies and ideas transforming the world of broadcasting. Through international exhibitions, conferences and industry initiatives, BES India drives knowledge exchange, innovation and collaboration across the global media ecosystem.</p>
         <div className="hero-actions"><Link href={resourceUrl(visitorOpen ? config?.visitorButtonLink || "/registrationform/visitor" : `${expo}/exibition/history`)} className="button button-primary">{visitorOpen ? "Register your visit" : "Explore BES EXPO"}<Icon name="arrow" /></Link><Link href={resourceUrl(config?.primaryButtonLink || `${expo}/exibition/participation_fee`)} className="button button-outline">Discover BES India<Icon name="diagonal" width={18} height={18} /></Link></div>
         <dl className="hero-event-meta">
