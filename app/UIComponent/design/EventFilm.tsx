@@ -1,37 +1,75 @@
 "use client";
 
-import { useRef, useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import type { HomePageVideo } from "@/app/homepage/types";
-import { Icon } from "./Icons";
+import { useEffect, useRef, useState } from "react";
 
-export default function EventFilm({ video }: { video: HomePageVideo }) {
-  const [failed, setFailed] = useState(false);
-  const [aspectRatio, setAspectRatio] = useState(video.aspectRatio || 16 / 9);
+const videoUrl = "/besexpolandscapeVideo.mp4";
+
+export default function EventFilm() {
   const player = useRef<HTMLVideoElement>(null);
+  const [failed, setFailed] = useState(false);
+
+  useEffect(() => {
+    const video = player.current;
+    if (!video) return;
+
+    let inView = false;
+    let disposed = false;
+    video.muted = true;
+    video.defaultMuted = true;
+
+    const syncPlayback = () => {
+      if (inView && !document.hidden && !disposed) {
+        // Native controls remain available if the browser blocks autoplay.
+        void video.play().then(() => {
+          if (!inView || document.hidden || disposed) video.pause();
+        }).catch(() => {});
+      } else {
+        video.pause();
+      }
+    };
+
+    const observer = new IntersectionObserver(([entry]) => {
+      inView = entry.isIntersecting && entry.intersectionRatio >= 0.2;
+      syncPlayback();
+    }, { threshold: [0, 0.2] });
+
+    observer.observe(video);
+    document.addEventListener("visibilitychange", syncPlayback);
+    return () => {
+      disposed = true;
+      observer.disconnect();
+      document.removeEventListener("visibilitychange", syncPlayback);
+      video.pause();
+    };
+  }, []);
+
   return (
-    <section className="event-film" data-portrait={aspectRatio < 1} aria-labelledby="event-film-title">
-      <div className="site-container film-layout">
-        <div className="film-introduction">
-          <span className="eyebrow">Inside the event</span>
-          <h2 id="event-film-title">{video.title}</h2>
-          <p>{video.description}</p>
-          <Link href="/galleries/pictures" className="text-link">Browse the event photographs<Icon name="arrow" /></Link>
-        </div>
-        <figure className="film-figure">
-          <div className="film-player" style={{ aspectRatio }}>
-            {video.url ? <>
-              <video key={video.url} ref={player} controls playsInline preload="none" crossOrigin={video.captionsUrl?.startsWith("https:") ? "anonymous" : undefined} poster={video.poster} aria-label={video.title} aria-describedby="film-caption" onLoadedMetadata={event => { const el = event.currentTarget; if (el.videoWidth && el.videoHeight) setAspectRatio(el.videoWidth / el.videoHeight); }} onError={() => setFailed(true)}>
-                <source src={video.url} type={video.contentType} onError={() => setFailed(true)} />
-                {video.captionsUrl && <track kind="captions" src={video.captionsUrl} srcLang="en" label="English" default />}
-                Your browser does not support embedded video. <a href={video.url}>Open the event film</a>.
-              </video>
-              {failed && <div className="film-error" role="status"><p>The film could not be loaded. Please try again.</p><button type="button" className="button button-gold" onClick={() => { setFailed(false); player.current?.load(); }}>Retry video</button><a href={video.url} className="text-link-light">Open video directly<Icon name="diagonal" /></a></div>}
-            </> : <Image src={video.poster} alt={`${video.title} — film cover`} fill sizes="(max-width: 560px) 90vw, 520px" unoptimized />}
-          </div>
-          <figcaption id="film-caption"></figcaption>
-        </figure>
+    <section className="event-film" aria-label="BES EXPO video">
+      <div className="film-player">
+        <video
+          ref={player}
+          controls
+          muted
+          loop
+          playsInline
+          preload="metadata"
+          width={848}
+          height={480}
+          aria-label="BES EXPO event film"
+          onError={() => setFailed(true)}
+        >
+          <source src={videoUrl} type="video/mp4" onError={() => setFailed(true)} />
+          Your browser does not support embedded video. <a href={videoUrl}>Open the BES EXPO video</a>.
+        </video>
+        {failed && <div className="film-error" role="status">
+          <p>The video could not be loaded. Please try again.</p>
+          <button type="button" className="button button-gold" onClick={() => {
+            setFailed(false);
+            player.current?.load();
+            void player.current?.play().catch(() => {});
+          }}>Retry video</button>
+          <a href={videoUrl} className="text-link-light">Open video directly</a>
+        </div>}
       </div>
     </section>
   );

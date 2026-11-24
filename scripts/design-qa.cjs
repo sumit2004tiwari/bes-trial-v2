@@ -54,9 +54,10 @@ async function assertPage(page, route) {
     assert.equal(await page.locator('main .home-hero + .event-film').count(), 1);
     const video = page.locator('main .event-film video');
     if (await video.count()) {
-      assert.equal(await video.getAttribute('preload'), 'none');
+      assert.equal(await video.getAttribute('preload'), 'metadata');
       assert.equal(await video.getAttribute('autoplay'), null);
-      assert.equal(await video.evaluate(el => el.controls && el.playsInline), true);
+      assert.equal(await video.evaluate(el => el.controls && el.playsInline && el.muted && el.loop), true);
+      assert.equal(await video.locator('source').getAttribute('src'), '/besexpolandscapeVideo.mp4');
     } else {
       const photo = page.locator('main .film-player img');
       await photo.scrollIntoViewIfNeeded();
@@ -112,8 +113,9 @@ async function assertPage(page, route) {
   for (const width of [320, 390, 768, 1024, 1280]) { await page.setViewportSize({ width, height: 900 }); await check(`Responsive home at ${width}px`, async () => {
     await assertPage(page, '/');
     assert.ok(await page.locator('main .hero-description').evaluate(el => parseFloat(getComputedStyle(el).fontSize) >= 17));
-    const frame = await page.locator('main .film-player').evaluate(el => ({ ratio: el.clientWidth / el.clientHeight, expected: parseFloat(el.style.aspectRatio), width: el.clientWidth }));
-    assert.ok(Math.abs(frame.ratio - frame.expected) < .02);
+    const frame = await page.locator('main .film-player').evaluate(el => ({ height: el.clientHeight, expectedHeight: document.querySelector('.inner_page').clientHeight, width: el.clientWidth, expectedWidth: document.querySelector('.inner_page').clientWidth }));
+    assert.ok(Math.abs(frame.height - frame.expectedHeight) <= 1);
+    assert.ok(Math.abs(frame.width - frame.expectedWidth) <= 1);
     assert.ok(frame.width <= width);
   }); }
   await page.setViewportSize({ width: 390, height: 844 });

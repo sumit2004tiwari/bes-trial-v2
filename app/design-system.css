@@ -36,7 +36,7 @@ main:focus { outline: none; }
 .brand-logo img { width: 225px; height: auto; }
 .header-account { flex-shrink: 0; min-width: 128px; }
 .desktop-nav { display: flex; gap: 3px; align-items: center; }
-.desktop-nav > a, .desktop-nav .nav-item > button { padding: 13px 10px; min-height: 44px; font-size: 16px; letter-spacing: .01em; color: #d1d6e1; background: none; border: 0; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
+.desktop-nav > a, .desktop-nav .nav-item > button { padding: 13px 10px; min-height: 44px; font-size: 1.125rem; letter-spacing: .01em; color: #d1d6e1; background: none; border: 0; display: flex; align-items: center; gap: 5px; white-space: nowrap; }
 .desktop-nav .nav-active, .desktop-nav .nav-item > button:hover, .desktop-nav > a:hover { color: var(--champagne); }
 .nav-item { position: relative; }
 .nav-panel { position: absolute; top: calc(100% + 8px); left: -30px; width: 295px; max-height: min(650px, calc(100dvh - 110px)); overflow-y: auto; background: white; color: var(--ink); border: 1px solid var(--line); border-radius: 12px; padding: 14px; box-shadow: 0 18px 60px #0d1c3033; }
@@ -49,7 +49,7 @@ main:focus { outline: none; }
 .mobile-menu-trigger.MuiIconButton-root { display: none; }
 .mobile-menu-heading { display: flex; align-items: center; justify-content: space-between; padding: 20px 22px; border-bottom: 1px solid var(--line); font-size: 20px; font-weight: 600; }
 .mobile-navigation { padding: 16px; }
-.mobile-navigation > a, .mobile-navigation summary { min-height: 52px; padding: 14px 12px; display: flex; align-items: center; justify-content: space-between; font-size: 18px; font-weight: 500; cursor: pointer; list-style: none; }
+.mobile-navigation > a, .mobile-navigation summary { min-height: 52px; padding: 14px 12px; display: flex; align-items: center; justify-content: space-between; font-size: 1.25rem; font-weight: 500; cursor: pointer; list-style: none; }
 .mobile-navigation summary::-webkit-details-marker { display: none; }
 .mobile-navigation details { border-bottom: 1px solid var(--line); }
 .mobile-navigation details[open] { padding-bottom: 12px; }
@@ -187,14 +187,14 @@ main:focus { outline: none; }
   .header-inner { gap: 16px; }
   .brand-logo { flex-basis: 190px; }
   .brand-logo img { width: 190px; }
-  .desktop-nav > a, .desktop-nav .nav-item > button { font-size: 14px; padding-inline: 7px; }
+  .desktop-nav > a, .desktop-nav .nav-item > button { font-size: 1rem; padding-inline: 7px; }
 }
 @media (max-width: 1199px) {
   .site-container, .section-layout, .gallery-page { width: calc(100% - 64px); }
   .header-inner { gap: 16px; }
   .brand-logo { flex-basis: 190px; }
   .brand-logo img { width: 190px; }
-  .desktop-nav > a, .desktop-nav .nav-item > button { font-size: 14px; padding-inline: 7px; }
+  .desktop-nav > a, .desktop-nav .nav-item > button { font-size: 1rem; padding-inline: 7px; }
   .footer-top { gap: 25px; }
 }
 @media (max-width: 1199px) {

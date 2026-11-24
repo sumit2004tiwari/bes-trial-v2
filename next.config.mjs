@@ -22,6 +22,8 @@ const withSerwist = withSerwistInit({
 });
 
 const nextConfig = withSerwist({
+  // Keep dev chunks separate so production builds cannot overwrite a running preview.
+  distDir: process.env.NODE_ENV === "development" ? ".next-dev" : ".next",
   env: {
     FRONTEND_DEMO_MODE: frontendDemo.frontendDemoEnabled ? "true" : "false",
   },

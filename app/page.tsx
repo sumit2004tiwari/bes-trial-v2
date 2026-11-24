@@ -4,7 +4,6 @@ import AllRegistrationTypeServices from "./backend/lib/services/all-registration
 import { RegistrationServiceType } from "./backend/lib/db/models/all_registration_services.model";
 import { getHomepageContent } from "./homepage/get-homepage-content";
 import { getHomepageCarouselSlides } from "./homepage/get-homepage-carousel";
-import { getHomepageVideoFallback } from "./homepage/homepage-video";
 import { HOMEPAGE } from "./Utility/Constant";
 import HeroVisual from "./UIComponent/design/HeroVisual";
 import EventFilm from "./UIComponent/design/EventFilm";
@@ -55,7 +54,7 @@ export default async function Home() {
       </div><HeroVisual slides={slides} />
     </div></section>
 
-    <EventFilm video={content.video || getHomepageVideoFallback()} />
+    <EventFilm />
 
     {content.announcementsEnabled && content.announcementItems.length > 0 && <SocietyNews items={content.announcementItems} />}
 
