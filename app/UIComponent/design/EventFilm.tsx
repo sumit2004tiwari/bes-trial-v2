@@ -2,15 +2,28 @@
 
 import { useEffect, useRef, useState } from "react";
 
-const videoUrl = "/besexpolandscapeVideo.mp4";
+const landscapeVideoUrl = "/besexpolandscapeVideo.mp4";
+const mobileVideoUrl = "/besvideo.mp4";
 
 export default function EventFilm() {
   const player = useRef<HTMLVideoElement>(null);
+  const [videoUrl, setVideoUrl] = useState<string>();
   const [failed, setFailed] = useState(false);
 
   useEffect(() => {
+    const mobileScreen = window.matchMedia("(max-width: 767px)");
+    const selectVideo = () => {
+      setFailed(false);
+      setVideoUrl(mobileScreen.matches ? mobileVideoUrl : landscapeVideoUrl);
+    };
+    selectVideo();
+    mobileScreen.addEventListener("change", selectVideo);
+    return () => mobileScreen.removeEventListener("change", selectVideo);
+  }, []);
+
+  useEffect(() => {
     const video = player.current;
-    if (!video) return;
+    if (!video || !videoUrl) return;
 
     let inView = false;
     let disposed = false;
@@ -41,24 +54,25 @@ export default function EventFilm() {
       document.removeEventListener("visibilitychange", syncPlayback);
       video.pause();
     };
-  }, []);
+  }, [videoUrl]);
 
   return (
     <section className="event-film" aria-label="BES EXPO video">
       <div className="film-player">
         <video
+          key={videoUrl}
           ref={player}
           controls
           muted
           loop
           playsInline
           preload="metadata"
-          width={848}
-          height={480}
+          width={videoUrl === mobileVideoUrl ? 480 : 848}
+          height={videoUrl === mobileVideoUrl ? 848 : 480}
           aria-label="BES EXPO event film"
           onError={() => setFailed(true)}
         >
-          <source src={videoUrl} type="video/mp4" onError={() => setFailed(true)} />
+          {videoUrl && <source src={videoUrl} type="video/mp4" onError={() => setFailed(true)} />}
           Your browser does not support embedded video. <a href={videoUrl}>Open the BES EXPO video</a>.
         </video>
         {failed && <div className="film-error" role="status">

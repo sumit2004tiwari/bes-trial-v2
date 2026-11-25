@@ -1,7 +1,10 @@
 # Homepage video
 
-The second homepage section, directly below the hero, contains only the supplied
-`public/besexpolandscapeVideo.mp4`. `EventFilm.tsx` selects this file directly;
+The second homepage section, directly below the hero, shows
+`public/besexpolandscapeVideo.mp4` on laptop and tablet screens (768px and wider),
+and `public/besvideo.mp4` on mobile screens (767px and narrower).
+`EventFilm.tsx` selects the file after checking the viewport and reloads the player
+when resizing crosses that breakpoint, including after rotating a device;
 legacy CMS and `HOMEPAGE_VIDEO_*` settings do not override this section.
 
 The player fills the entire content viewport below the site header, edge to edge,

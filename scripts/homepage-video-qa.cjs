@@ -81,9 +81,17 @@ async function captureFilm(page, file) {
   fs.mkdirSync('artifacts', { recursive: true });
   await captureFilm(page, 'artifacts/homepage-video-desktop.png');
 
-  for (const width of [320, 390, 768, 1280]) {
+  for (const width of [320, 390, 767, 768, 1280]) {
     await page.setViewportSize({ width, height: 900 });
+    const expectedSource = width < 768 ? '/besvideo.mp4' : '/besexpolandscapeVideo.mp4';
+    await page.waitForFunction(expected => {
+      const el = document.querySelector('.event-film video');
+      return el.currentSrc.endsWith(expected) && el.readyState >= 2 && !el.error;
+    }, expectedSource);
+    assert.equal(await video.locator('source').getAttribute('src'), expectedSource);
     await video.scrollIntoViewIfNeeded();
+    await page.waitForFunction(() => !document.querySelector('.event-film video').paused);
+    checks.push(`Correct film loads and plays at ${width}px after resizing`);
     const frame = await video.evaluate(el => ({ width: el.clientWidth, height: el.clientHeight, fit: getComputedStyle(el).objectFit, availableWidth: document.querySelector('.inner_page').clientWidth, availableHeight: document.querySelector('.inner_page').clientHeight, scroll: document.querySelector('.inner_page').scrollWidth }));
     assert.ok(Math.abs(frame.width - frame.availableWidth) <= 1);
     assert.ok(Math.abs(frame.height - frame.availableHeight) <= 1);
